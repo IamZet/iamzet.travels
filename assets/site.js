@@ -106,9 +106,9 @@
         }).addTo(map);
         var pts = d[1].map(function (c) {
           var linked = !!c.s;
-          var m = L.circleMarker([c.la, c.lo], { radius: linked ? 5 : 4, weight: linked ? 1.5 : 1.5, color: linked ? surf : muted, fillColor: linked ? acc : surf, fillOpacity: 1 });
+          var m = L.circleMarker([c.la, c.lo], { radius: 6, weight: 1.5, color: surf, fillColor: acc, fillOpacity: 1 });
           var h = '<div class="wm-pop"><b>' + esc(c.n) + '</b>' + (c.y ? '<span class="wm-y">' + esc(c.y) + '</span>' : '') +
-            (linked ? '<a href="trips/' + esc(c.s) + '.html">' + esc(c.t) + ' →</a>' : '') + '</div>';
+            (linked ? '<a href="trips/' + esc(c.s) + '.html" target="_blank" rel="noopener">' + esc(c.t) + ' →</a>' : '') + '</div>';
           m.bindPopup(h, { closeButton: false, className: 'wm-popup', offset: [0, -2] });
           m.bindTooltip(esc(c.n), { direction: 'top', offset: [0, -6], className: 'wm-tip' });
           return m;
