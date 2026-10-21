@@ -95,10 +95,10 @@
         var map = L.map(box, { zoomSnap: 0.5, minZoom: 2, worldCopyJump: true, attributionControl: true, scrollWheelZoom: false });
         map.on('focus', function () { map.scrollWheelZoom.enable(); });
         map.on('blur', function () { map.scrollWheelZoom.disable(); });
-        L.tileLayer('https://{s}.basemaps.cartocdn.com/' + (dark ? 'dark' : 'light') + '_all/{z}/{x}/{y}{r}.png', {
-          subdomains: 'abcd', maxZoom: 18,
-          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'
-        }).addTo(map);
+        var esri = 'https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_' + (dark ? 'Dark' : 'Light') + '_Gray_';
+        L.tileLayer(esri + 'Base/MapServer/tile/{z}/{y}/{x}', { maxZoom: 16, attribution: 'Tiles &copy; Esri &mdash; Esri, HERE, Garmin, &copy; OpenStreetMap' }).addTo(map);
+        map.createPane('labels'); map.getPane('labels').style.zIndex = 350; map.getPane('labels').style.pointerEvents = 'none';
+        L.tileLayer(esri + 'Reference/MapServer/tile/{z}/{y}/{x}', { maxZoom: 16, pane: 'labels' }).addTo(map);
         var acc = css('--accent'), soft = css('--accent-soft'), muted = css('--muted'), surf = css('--surface');
         var countries = L.geoJSON(d[0], {
           style: { color: acc, weight: 1, opacity: .55, fillColor: acc, fillOpacity: dark ? .18 : .12 },
