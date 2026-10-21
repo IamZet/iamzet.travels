@@ -364,8 +364,8 @@ body.lb-open{overflow:hidden}
 .carousel .cnav .cnext{right:-14px}
 .carousel .cnav button:disabled{opacity:0;pointer-events:none}
 .au-d{font-size:13px;color:var(--muted);margin-top:2px}
-.au-l{margin-top:8px}
+.au-l{margin-top:10px}
 body.home:not(.arch) .sections{margin:0 0 18px}
 body.home:not(.arch) .worldmap{margin:0 0 18px}
-.au-go{display:inline-block;margin-top:12px;padding:7px 16px;border-radius:999px;background:var(--accent);color:var(--on-accent);text-decoration:none;font-weight:600;font-size:14px}
+.au-go{display:inline-block;margin-top:10px;padding:7px 16px;border-radius:999px;background:var(--accent);color:var(--on-accent);text-decoration:none;font-weight:600;font-size:14px}
 .au-go:hover{filter:brightness(1.1)}

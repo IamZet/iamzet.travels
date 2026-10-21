@@ -227,7 +227,7 @@ AU_LINKS = ''.join(('<a href="%s" title="%s" aria-label="%s">%s</a>' if u.starts
 YT_AVATAR = 'https://yt3.googleusercontent.com/VCV5s0xMYvfGBBXp79TL5JZM0dhkc3p_IdxonkBYF7Lofq0zzr30_OuFVT5qtI9wx7KWGdDy=s176-c-k-c0x00ffffff-no-rj'
 _av = f'<img src="assets/{_me}" alt="" width="128" height="128">' if _me else f'<img src="{YT_AVATAR}" alt="" width="64" height="64" referrerpolicy="no-referrer" onerror="this.remove()"><span>АЗ</span>'
 AUTHOR = f'''<aside class="author" aria-label="Об авторе"><div class="av">{_av}</div><div class="au-b"><div class="au-n">Александр Захаров</div><div class="au-d">На машине по России и не только</div>
-<div class="au-l">{AU_LINKS}</div><a class="au-go" href="travels.html">Путешествия →</a></div></aside>'''
+<a class="au-go" href="travels.html">Путешествия →</a><div class="au-l">{AU_LINKS}</div></div></aside>'''
 EMPTY = '<p class="empty" id="empty" hidden>Ничего не нашлось. Попробуйте другое название или снимите фильтры.</p>'
 SOCIAL = ' · '.join(f'<a href="{u}" target="_blank" rel="noopener">{n}</a>' for n, u in (('YouTube', 'https://www.youtube.com/@alex.zakharov'), ('Telegram', 'https://t.me/iamzet'), ('Дзен', 'https://dzen.ru/alexzakharov'))) + ' · <a href="mailto:alex.m.zakharov@gmail.com">alex.m.zakharov@gmail.com</a>'
 FOOT = f'<footer class="foot">© {maxY} Александр Захаров · {SOCIAL}</footer>'
