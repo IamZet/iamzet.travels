@@ -339,8 +339,6 @@ body.lb-open{overflow:hidden}
 .au-l a{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;border:1px solid var(--line);color:var(--fg);background:var(--bg)}
 .au-l a:hover{border-color:var(--accent);color:var(--accent)}
 @media (max-width:560px){.feats{grid-auto-columns:78%;gap:12px}.cnav{display:none}}
-body.home:not(.arch) .latest{padding-top:28px}
-@media (max-width:560px){body.home:not(.arch) .latest{padding-top:20px}}
 .more{display:block}
 .more-c{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;aspect-ratio:4/3;border-radius:6px;border:1px dashed var(--line);background:var(--surface);text-align:center;transition:border-color .2s}
 .more-t{font-family:var(--f-display);font-weight:700;font-size:26px;color:var(--accent);text-decoration:none}
@@ -348,3 +346,4 @@ body.home:not(.arch) .latest{padding-top:28px}
 .more-n{font-size:13px;color:var(--muted)}
 .more-a{margin-top:6px;color:var(--accent);font-weight:600;font-size:14px}
 #all{scroll-margin-top:-104px}
+.mh-home{display:flex;align-items:center;justify-content:space-between;gap:16px}
