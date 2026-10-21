@@ -351,3 +351,5 @@ body.lb-open{overflow:hidden}
 .more-a{margin-top:6px;color:var(--accent);font-weight:600;font-size:14px}
 #all{scroll-margin-top:-104px}
 .mh-home{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.sections{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin:8px 0 28px}
+.sections .archlink{margin:0}

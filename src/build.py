@@ -232,18 +232,30 @@ EMPTY = '<p class="empty" id="empty" hidden>Ничего не нашлось. П
 SOCIAL = ' · '.join(f'<a href="{u}" target="_blank" rel="noopener">{n}</a>' for n, u in (('YouTube', 'https://www.youtube.com/@alex.zakharov'), ('Telegram', 'https://t.me/iamzet'), ('Дзен', 'https://dzen.ru/alexzakharov'))) + ' · <a href="mailto:alex.m.zakharov@gmail.com">alex.m.zakharov@gmail.com</a>'
 FOOT = f'<footer class="foot">© {maxY} Александр Захаров · {SOCIAL}</footer>'
 
+TRAVELS_LINK = f'<a class="archlink" href="travels.html"><span class="al-k">Путешествия</span><span class="al-t">{ARCH_Y}–{maxY}</span><span class="al-n">{nRecent} {plural(nRecent, "поездка", "поездки", "поездок")} →</span></a>'
+ARCH_LINK = f'<a class="archlink" href="archive.html"><span class="al-k">Архив</span><span class="al-t">{min(archY)}–{max(archY)}</span><span class="al-n">{nArch} {plural(nArch, "поездка", "поездки", "поездок")} →</span></a>'
 index = head('Все путешествия — iamzet.travels', f'Путевой журнал Александра Захарова: {len(T)} поездок с {minY} года — путевые заметки, видеоотчёты, карты маршрутов и фотоальбомы.', '') + f'''<body class="home">
 <div class="wrap">
 <header class="masthead mh-home">
   <h1 class="brandh">На машине по России и не только</h1>
   <div class="cnav"><button type="button" class="cprev" aria-label="Назад"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 4l-6 6 6 6"/></svg></button><button type="button" class="cnext" aria-label="Вперёд"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 4l6 6-6 6"/></svg></button></div>
 </header>
-<section class="latest" aria-label="Последние поездки"><div class="top">{AUTHOR}<div class="feats" tabindex="0">{latest_html}<div class="more"><span class="more-c"><a class="more-t" href="{"#t-" + _more["slug"] if _more else "#all"}">Ещё →</a></span></div></div></div></section>
+<section class="latest" aria-label="Последние поездки"><div class="top">{AUTHOR}<div class="feats" tabindex="0">{latest_html}<div class="more"><span class="more-c"><a class="more-t" href="{"travels.html#t-" + _more["slug"] if _more else "travels.html"}">Ещё →</a></span></div></div></div></section>
 <section class="worldmap" aria-label="Карта всех поездок"><div class="mapbox" id="worldmap"><span class="maploading">Загружаем карту…</span></div></section>
-<div id="all"></div>
+<nav class="sections">{TRAVELS_LINK}{ARCH_LINK}</nav>
+{FOOT}
+</div>
+<script src="assets/site.js?v={VER}" defer></script>
+</body>
+</html>'''
+
+travels = head('Путешествия — iamzet.travels', f'Путешествия Александра Захарова с {ARCH_Y} года: {nRecent} поездок — путевые заметки, видеоотчёты, карты маршрутов и фотоальбомы.', '') + f'''<body class="home arch">
+<div class="topbar"><div class="wrap"><a href="index.html" class="back">← Главная</a><span class="brand">iamzet.travels</span></div></div>
+<div class="wrap">
+<header class="masthead"><h1 class="brandh">Путешествия</h1><p class="archsub">{ARCH_Y}–{maxY} · {nRecent} {plural(nRecent, 'поездка', 'поездки', 'поездок')}</p></header>
 {tools(nRecent)}
 <main id="list">{''.join(sections)}{EMPTY}</main>
-<a class="archlink" href="archive.html"><span class="al-k">Архив</span><span class="al-t">{min(archY)}–{max(archY)}</span><span class="al-n">{nArch} {plural(nArch, 'поездка', 'поездки', 'поездок')} →</span></a>
+<nav class="sections">{ARCH_LINK}</nav>
 {FOOT}
 </div>
 <script src="assets/site.js?v={VER}" defer></script>
@@ -382,7 +394,7 @@ def trip_page(t, prev, nxt):
     desc = f"{t['n']}, {t['wfull'].lower()}: " + ', '.join(parts) + '.'
     og = f'<meta property="og:image" content="https://i.ytimg.com/vi/{t["thumb"]}/hqdefault.jpg">' if t['thumb'] else ''
     return head(f"{t['n']} · {t['ylab']} — iamzet.travels", desc, '../', og) + f'''<body class="tripp">
-<div class="topbar"><div class="wrap"><a href="../{'archive.html' if t['y'] < ARCH_Y else 'index.html'}" class="back">← {'Архив' if t['y'] < ARCH_Y else 'Все поездки'}</a><span class="brand">iamzet.travels</span></div></div>
+<div class="topbar"><div class="wrap"><a href="../{'archive.html' if t['y'] < ARCH_Y else 'travels.html'}" class="back">← {'Архив' if t['y'] < ARCH_Y else 'Путешествия'}</a><span class="brand">iamzet.travels</span></div></div>
 <div class="wrap">
 <header class="thead">
   <div class="twhen"><i class="s-{t['s']}"></i>{e(t['wfull'])}</div>
@@ -394,7 +406,7 @@ def trip_page(t, prev, nxt):
 <div class="wrap">
 {panelhtml}
 <nav class="prevnext" aria-label="Соседние поездки">{nav(nxt, '← Раньше', 'older')}{nav(prev, 'Позже →', 'newer')}</nav>
-<footer class="foot">© {maxY} Александр Захаров · <a href="../{'archive.html' if t['y'] < ARCH_Y else 'index.html'}">{'Архив' if t['y'] < ARCH_Y else 'Все поездки'}</a> · {SOCIAL}</footer>
+<footer class="foot">© {maxY} Александр Захаров · <a href="../index.html">Главная</a> · <a href="../{'archive.html' if t['y'] < ARCH_Y else 'travels.html'}">{'Архив' if t['y'] < ARCH_Y else 'Путешествия'}</a> · {SOCIAL}</footer>
 </div>
 <script src="../assets/site.js?v={VER}" defer></script>
 </body>
@@ -405,12 +417,14 @@ import glob as _glob
 for _f in _glob.glob(os.path.join(OUT, 'trips', '*.html')): os.remove(_f)
 os.makedirs(os.path.join(OUT, 'trips'), exist_ok=True); os.makedirs(os.path.join(OUT, 'assets'), exist_ok=True)
 open(os.path.join(OUT, 'index.html'), 'w', encoding='utf-8').write(index)
+open(os.path.join(OUT, 'travels.html'), 'w', encoding='utf-8').write(travels)
 archive = head('Архив — iamzet.travels', f'Архив путевого журнала Александра Захарова: {nArch} поездок {min(archY)}–{max(archY)} годов.', '') + f'''<body class="home arch">
 <div class="topbar"><div class="wrap"><a href="index.html" class="back">← Главная</a><span class="brand">iamzet.travels</span></div></div>
 <div class="wrap">
 <header class="masthead"><h1 class="brandh">Архив</h1><p class="archsub">{min(archY)}–{max(archY)} · {nArch} {plural(nArch, 'поездка', 'поездки', 'поездок')}</p></header>
 {tools(nArch)}
 <main id="list">{''.join(year_sections(archY))}{EMPTY}</main>
+<nav class="sections">{TRAVELS_LINK}</nav>
 {FOOT}
 </div>
 <script src="assets/site.js?v={VER}" defer></script>
