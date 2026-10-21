@@ -319,3 +319,4 @@ body.lb-open{overflow:hidden}
 .archlink .al-n{margin-left:auto;color:var(--accent);font-weight:600}
 .archsub{margin:4px 0 0;font-family:var(--f-mono);font-size:13px;color:var(--muted)}
 #worldmap:focus,#worldmap:focus-visible{outline:none}
+#worldmap .leaflet-interactive:focus,#worldmap path:focus{outline:none}
