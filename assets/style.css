@@ -44,7 +44,17 @@ a.hbar:hover span{filter:brightness(1.15)}
 .legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;vertical-align:-1px}
 
 .latest{padding-block:8px 36px}
-.feats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.feats{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 36px) / 3);gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain;padding-bottom:2px}
+.feats::-webkit-scrollbar{display:none}
+.feats>*{scroll-snap-align:start}
+.feats:focus-visible{outline:none}
+.lhead{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
+.lhead .kicker{margin:0}
+.cnav{display:flex;gap:8px}
+.cnav button{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;border:1px solid var(--line);background:var(--surface);color:var(--fg);cursor:pointer;padding:0}
+.cnav button svg{width:16px;height:16px}
+.cnav button:hover:not(:disabled){border-color:var(--accent);color:var(--accent)}
+.cnav button:disabled{opacity:.35;cursor:default}
 .feat{text-decoration:none;display:grid;gap:4px}
 .fimg{position:relative;aspect-ratio:4/3;border-radius:6px;overflow:hidden;background:var(--line);max-width:100%}
 .fimg img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
@@ -192,10 +202,7 @@ a.tname:hover{color:var(--accent);text-decoration:underline;text-underline-offse
 @media (max-width:860px){
   .reading.has-toc{grid-template-columns:minmax(0,1fr);gap:0}
   .toc{position:static;max-height:none;border-bottom:1px solid var(--line);padding-bottom:16px}
-  .feats{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
-  .feats .author{grid-column:1/-1;aspect-ratio:auto;flex-direction:row;text-align:left;justify-content:flex-start;gap:16px}
-  .feats .author .av{width:96px;margin:0}
-  .feats .author .au-l{justify-content:flex-start}
+  .feats{grid-auto-columns:calc((100% - 18px) / 2)}
 }
 @media (max-width:640px){
   .tabbar{gap:0}
@@ -331,3 +338,4 @@ body.lb-open{overflow:hidden}
 .au-l{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:10px}
 .au-l a{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;border:1px solid var(--line);color:var(--fg);background:var(--bg)}
 .au-l a:hover{border-color:var(--accent);color:var(--accent)}
+@media (max-width:560px){.feats{grid-auto-columns:78%;gap:12px}.cnav{display:none}}

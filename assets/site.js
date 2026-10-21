@@ -33,6 +33,18 @@
     });
   }
 
+  // Home: latest-trips carousel
+  var track = document.querySelector('.feats'), cp = document.querySelector('.cprev'), cn = document.querySelector('.cnext');
+  if (track && cp && cn) {
+    function step() { var it = track.children[0]; return it ? it.getBoundingClientRect().width + parseFloat(getComputedStyle(track).columnGap || 18) : track.clientWidth; }
+    function upd() { cp.disabled = track.scrollLeft <= 2; cn.disabled = track.scrollLeft + track.clientWidth >= track.scrollWidth - 2; }
+    cp.addEventListener('click', function () { track.scrollBy({ left: -step(), behavior: 'smooth' }); });
+    cn.addEventListener('click', function () { track.scrollBy({ left: step(), behavior: 'smooth' }); });
+    track.addEventListener('scroll', function () { window.requestAnimationFrame(upd); }, { passive: true });
+    track.addEventListener('keydown', function (ev) { if (ev.key === 'ArrowRight') { ev.preventDefault(); cn.click(); } else if (ev.key === 'ArrowLeft') { ev.preventDefault(); cp.click(); } });
+    window.addEventListener('resize', upd); upd();
+  }
+
   // Trip page: click-to-play YouTube (no YouTube scripts load until the reader asks)
   // Video source: Дзен (default) / YouTube
   function vsrc() { return document.documentElement.getAttribute('data-vsrc') || 'dzen'; }
