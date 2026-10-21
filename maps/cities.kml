@@ -18,561 +18,561 @@
         <Point><coordinates>40.4178687,56.1445956,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Бостон</name><description>2005</description>
+        <name>Бостон</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2004-ssha-boston-nyu-york.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2005</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2004-ssha-boston-nyu-york.html</value></Data></ExtendedData>
         <Point><coordinates>-71.0588801,42.3600825,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Нью-Йорк</name><description>2005</description>
+        <name>Нью-Йорк</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2004-ssha-boston-nyu-york.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2005</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2004-ssha-boston-nyu-york.html</value></Data></ExtendedData>
         <Point><coordinates>-74.0059728,40.7127753,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Чикаго</name><description>2006</description>
+        <name>Чикаго</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2006-ssha-chikago-sauz-bend.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2006</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2006-ssha-chikago-sauz-bend.html</value></Data></ExtendedData>
         <Point><coordinates>-87.6297982,41.8781136,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Сауз Бенд</name><description>2007</description>
+        <name>Сауз Бенд</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2007-ssha-sauz-bend.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2007</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2007-ssha-sauz-bend.html</value></Data></ExtendedData>
         <Point><coordinates>-86.2519898,41.6763545,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Сан-Франциско</name><description>2009</description>
+        <name>Сан-Франциско</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2009-san-frantsisko.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2009</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2009-san-frantsisko.html</value></Data></ExtendedData>
         <Point><coordinates>-122.4194155,37.7749295,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Аруша</name><description>2024</description>
+        <name>Аруша</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2024-tanzaniya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2024</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2024-tanzaniya.html</value></Data></ExtendedData>
         <Point><coordinates>36.6829927,-3.3869254,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Дар-эс-Салам</name><description>2024</description>
+        <name>Дар-эс-Салам</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2024-tanzaniya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2024</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2024-tanzaniya.html</value></Data></ExtendedData>
         <Point><coordinates>39.2083284,-6.792354,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Занзибар</name><description>2022</description>
+        <name>Занзибар</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2022-tanzaniya-keniya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2022</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2022-tanzaniya-keniya.html</value></Data></ExtendedData>
         <Point><coordinates>39.202641,-6.165917,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Мванза</name><description>2024</description>
+        <name>Мванза</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2024-tanzaniya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2024</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2024-tanzaniya.html</value></Data></ExtendedData>
         <Point><coordinates>32.9174517,-2.5164305,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Бабати</name><description>2024</description>
+        <name>Бабати</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2024-tanzaniya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2024</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2024-tanzaniya.html</value></Data></ExtendedData>
         <Point><coordinates>35.7461476999999,-4.2078266,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Додома</name><description>2024</description>
+        <name>Додома</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2024-tanzaniya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2024</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2024-tanzaniya.html</value></Data></ExtendedData>
         <Point><coordinates>35.7516069,-6.162959,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Тендума</name><description>2016</description>
+        <name>Тендума</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2016-tanzaniya-stambul.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2016</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2016-tanzaniya-stambul.html</value></Data></ExtendedData>
         <Point><coordinates>32.7645497,-9.3101517,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Гома</name><description>2016</description>
+        <name>Гома</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2016-tanzaniya-ruanda-kongo.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2016</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2016-tanzaniya-ruanda-kongo.html</value></Data></ExtendedData>
         <Point><coordinates>29.2204548,-1.658501,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Тель-Авив</name><description>2019</description>
+        <name>Тель-Авив</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2019-izrail.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2019</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2019-izrail.html</value></Data></ExtendedData>
         <Point><coordinates>34.7817676,32.0852999,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Иерусалим</name><description>2019</description>
+        <name>Иерусалим</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2019-izrail.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2019</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2019-izrail.html</value></Data></ExtendedData>
         <Point><coordinates>35.21371,31.768319,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Иерихон</name><description>2019</description>
+        <name>Иерихон</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2019-izrail.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2019</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2019-izrail.html</value></Data></ExtendedData>
         <Point><coordinates>35.4617582999999,31.8611058,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Назарет</name><description>2019</description>
+        <name>Назарет</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2019-izrail.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2019</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2019-izrail.html</value></Data></ExtendedData>
         <Point><coordinates>35.303546,32.699635,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Эйлат</name><description>2019</description>
+        <name>Эйлат</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2019-izrail.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2019</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2019-izrail.html</value></Data></ExtendedData>
         <Point><coordinates>34.9519250000001,29.557669,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Киев</name><description>2016</description>
+        <name>Киев</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2016-vokrug-chernogo-morya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2016</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2016-vokrug-chernogo-morya.html</value></Data></ExtendedData>
         <Point><coordinates>30.5234,50.4501,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Черкассы</name><description>2016</description>
+        <name>Черкассы</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2016-vokrug-chernogo-morya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2016</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2016-vokrug-chernogo-morya.html</value></Data></ExtendedData>
         <Point><coordinates>32.059767,49.444433,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Одесса</name><description>2016</description>
+        <name>Одесса</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2016-vokrug-chernogo-morya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2016</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2016-vokrug-chernogo-morya.html</value></Data></ExtendedData>
         <Point><coordinates>30.7233095,46.482526,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Констанца</name><description>2016</description>
+        <name>Констанца</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2016-vokrug-chernogo-morya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2016</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2016-vokrug-chernogo-morya.html</value></Data></ExtendedData>
         <Point><coordinates>28.6348138,44.1598013,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Варна</name><description>2016</description>
+        <name>Варна</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2016-vokrug-chernogo-morya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2016</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2016-vokrug-chernogo-morya.html</value></Data></ExtendedData>
         <Point><coordinates>27.9147333,43.2140504,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Бургас</name><description>2016</description>
+        <name>Бургас</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2016-vokrug-chernogo-morya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2016</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2016-vokrug-chernogo-morya.html</value></Data></ExtendedData>
         <Point><coordinates>27.4626361000001,42.5047926,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Несебар</name><description>2016</description>
+        <name>Несебар</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2016-vokrug-chernogo-morya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2016</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2016-vokrug-chernogo-morya.html</value></Data></ExtendedData>
         <Point><coordinates>27.7205593,42.6601365,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Стамбул</name><description>2016</description>
+        <name>Стамбул</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2016-vokrug-chernogo-morya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2016</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2016-vokrug-chernogo-morya.html</value></Data></ExtendedData>
         <Point><coordinates>28.9783589,41.0082376,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Трабзон</name><description>2023</description>
+        <name>Трабзон</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2023-armeniya-i-zapadnaya-aziya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2023</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2023-armeniya-i-zapadnaya-aziya.html</value></Data></ExtendedData>
         <Point><coordinates>39.7167633,41.0026969,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Батуми</name><description>2023</description>
+        <name>Батуми</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2023-armeniya-i-zapadnaya-aziya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2023</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2023-armeniya-i-zapadnaya-aziya.html</value></Data></ExtendedData>
         <Point><coordinates>41.6367455,41.6167547,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Поти</name><description>2019</description>
+        <name>Поти</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2019-osetiya-gruziya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2019</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2019-osetiya-gruziya.html</value></Data></ExtendedData>
         <Point><coordinates>41.67137,42.1582596,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Тбилиси</name><description>2024</description>
+        <name>Тбилиси</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2023-armeniya-i-zapadnaya-aziya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2024</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2023-armeniya-i-zapadnaya-aziya.html</value></Data></ExtendedData>
         <Point><coordinates>44.827096,41.7151377,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Ахалцихе</name><description>2019</description>
+        <name>Ахалцихе</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2019-osetiya-gruziya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2019</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2019-osetiya-gruziya.html</value></Data></ExtendedData>
         <Point><coordinates>42.9934449,41.6434293,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Владикавказ</name><description>2024</description>
+        <name>Владикавказ</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2023-kyrgyzstan-i-tsentralnaya-aziya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2024</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2023-kyrgyzstan-i-tsentralnaya-aziya.html</value></Data></ExtendedData>
         <Point><coordinates>44.6659759,43.0252344,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Домбай</name><description>2018</description>
+        <name>Домбай</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2018-kavkaz.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2018</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2018-kavkaz.html</value></Data></ExtendedData>
         <Point><coordinates>41.6235059000001,43.2894021,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Трескол</name><description>2018</description>
+        <name>Трескол</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2018-kavkaz.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2018</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2018-kavkaz.html</value></Data></ExtendedData>
         <Point><coordinates>42.513998,43.2571143,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Дербент</name><description>2016</description>
+        <name>Дербент</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2016-vokrug-chernogo-morya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2016</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2016-vokrug-chernogo-morya.html</value></Data></ExtendedData>
         <Point><coordinates>48.2890907,42.0674251,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Волгоград</name><description>2024</description>
+        <name>Волгоград</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2023-kyrgyzstan-i-tsentralnaya-aziya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2024</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2023-kyrgyzstan-i-tsentralnaya-aziya.html</value></Data></ExtendedData>
         <Point><coordinates>44.5133035,48.708048,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Самсун</name><description>2016</description>
+        <name>Самсун</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2016-vokrug-chernogo-morya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2016</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2016-vokrug-chernogo-morya.html</value></Data></ExtendedData>
         <Point><coordinates>36.3360666999999,41.2797031,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Измаил</name><description>2016</description>
+        <name>Измаил</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2016-vokrug-chernogo-morya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2016</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2016-vokrug-chernogo-morya.html</value></Data></ExtendedData>
         <Point><coordinates>28.8501919,45.3501944,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Самара</name><description>2023</description>
+        <name>Самара</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2023-kyrgyzstan-i-tsentralnaya-aziya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2023</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2023-kyrgyzstan-i-tsentralnaya-aziya.html</value></Data></ExtendedData>
         <Point><coordinates>50.2212463,53.2415041,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Оренбург</name><description>2023</description>
+        <name>Оренбург</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2023-kyrgyzstan-i-tsentralnaya-aziya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2023</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2023-kyrgyzstan-i-tsentralnaya-aziya.html</value></Data></ExtendedData>
         <Point><coordinates>55.0713553000001,51.8086758,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Аральск</name><description>2024</description>
+        <name>Аральск</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2023-kyrgyzstan-i-tsentralnaya-aziya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2024</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2023-kyrgyzstan-i-tsentralnaya-aziya.html</value></Data></ExtendedData>
         <Point><coordinates>61.6639055000001,46.803197,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Самарканд</name><description>2015</description>
+        <name>Самарканд</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2015-uzbekistan.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2015</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2015-uzbekistan.html</value></Data></ExtendedData>
         <Point><coordinates>66.9749730999999,39.627012,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Бухара</name><description>2015</description>
+        <name>Бухара</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2015-uzbekistan.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2015</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2015-uzbekistan.html</value></Data></ExtendedData>
         <Point><coordinates>64.4555769,39.7680827,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Хива</name><description>2015</description>
+        <name>Хива</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2015-uzbekistan.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2015</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2015-uzbekistan.html</value></Data></ExtendedData>
         <Point><coordinates>60.3414529,41.3895075,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Бейгеу</name><description>2015</description>
+        <name>Бейгеу</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2015-uzbekistan.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2015</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2015-uzbekistan.html</value></Data></ExtendedData>
         <Point><coordinates>55.1818479999999,45.3222362,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Атырау</name><description>2015</description>
+        <name>Атырау</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2015-uzbekistan.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2015</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2015-uzbekistan.html</value></Data></ExtendedData>
         <Point><coordinates>51.9238373000001,47.0944959,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Астрахань</name><description>2015</description>
+        <name>Астрахань</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2015-uzbekistan.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2015</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2015-uzbekistan.html</value></Data></ExtendedData>
         <Point><coordinates>48.0599345000001,46.3588045,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Казань</name><description>2016</description>
+        <name>Казань</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2016-kazan-yoshkar-ola.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2016</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2016-kazan-yoshkar-ola.html</value></Data></ExtendedData>
         <Point><coordinates>49.0660806000001,55.8304307,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Севастополь</name><description>2022</description>
+        <name>Севастополь</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2022-krym.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2022</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2022-krym.html</value></Data></ExtendedData>
         <Point><coordinates>33.5253671,44.61665,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Ялта</name><description>2013</description>
+        <name>Ялта</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2013-krym.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2013</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2013-krym.html</value></Data></ExtendedData>
         <Point><coordinates>34.1532687,44.4909462,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Феодосия</name><description>2013</description>
+        <name>Феодосия</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2013-krym.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2013</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2013-krym.html</value></Data></ExtendedData>
         <Point><coordinates>35.382433,45.031933,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Коктебель</name><description>2021</description>
+        <name>Коктебель</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2021-krym.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2021</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2021-krym.html</value></Data></ExtendedData>
         <Point><coordinates>35.2450542,44.9662269,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Керчь</name><description>2017</description>
+        <name>Керчь</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2017-krym.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2017</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2017-krym.html</value></Data></ExtendedData>
         <Point><coordinates>36.468293,45.357314,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Евпатория</name><description>2021</description>
+        <name>Евпатория</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2021-krym.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2021</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2021-krym.html</value></Data></ExtendedData>
         <Point><coordinates>33.366867,45.19045,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Курск</name><description>2013</description>
+        <name>Курск</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2013-krym.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2013</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2013-krym.html</value></Data></ExtendedData>
         <Point><coordinates>36.1562241,51.7091957,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Воронеж</name><description>2012</description>
+        <name>Воронеж</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2012-abhaziya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2012</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2012-abhaziya.html</value></Data></ExtendedData>
         <Point><coordinates>39.2088823,51.6754966,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Ростов на Дону</name><description>2017</description>
+        <name>Ростов на Дону</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2017-krym.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2017</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2017-krym.html</value></Data></ExtendedData>
         <Point><coordinates>39.701505,47.2357137,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Краснодар</name><description>2019</description>
+        <name>Краснодар</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2019-krym.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2019</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2019-krym.html</value></Data></ExtendedData>
         <Point><coordinates>38.9872209,45.0392674,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Туапсе</name><description>2012</description>
+        <name>Туапсе</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2012-abhaziya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2012</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2012-abhaziya.html</value></Data></ExtendedData>
         <Point><coordinates>39.0806454,44.106518,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Сочи</name><description>2023</description>
+        <name>Сочи</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2023-abhaziya-gruziya-armeniya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2023</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2023-abhaziya-gruziya-armeniya.html</value></Data></ExtendedData>
         <Point><coordinates>39.7341543,43.6028079,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Гагра</name><description>2023</description>
+        <name>Гагра</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2023-abhaziya-gruziya-armeniya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2023</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2023-abhaziya-gruziya-armeniya.html</value></Data></ExtendedData>
         <Point><coordinates>40.2705551,43.2795153,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Сухуми</name><description>2023</description>
+        <name>Сухуми</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2023-abhaziya-gruziya-armeniya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2023</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2023-abhaziya-gruziya-armeniya.html</value></Data></ExtendedData>
         <Point><coordinates>41.0234153,43.0015252,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Зугдиди</name><description>2019</description>
+        <name>Зугдиди</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2019-osetiya-gruziya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2019</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2019-osetiya-gruziya.html</value></Data></ExtendedData>
         <Point><coordinates>41.866992,42.5091391,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Минск</name><description>2022</description>
+        <name>Минск</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2022-minsk.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2022</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2022-minsk.html</value></Data></ExtendedData>
         <Point><coordinates>27.558972,53.9006011,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Брест</name><description>2017</description>
+        <name>Брест</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2017-amsterdam.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2017</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2017-amsterdam.html</value></Data></ExtendedData>
         <Point><coordinates>23.7636662,52.0996507,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Варшава</name><description>2017</description>
+        <name>Варшава</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2017-amsterdam.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2017</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2017-amsterdam.html</value></Data></ExtendedData>
         <Point><coordinates>21.0122287,52.2296756,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Берлин</name><description>2017</description>
+        <name>Берлин</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2017-amsterdam.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2017</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2017-amsterdam.html</value></Data></ExtendedData>
         <Point><coordinates>13.404954,52.5200066,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Амстердам</name><description>2017</description>
+        <name>Амстердам</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2017-amsterdam.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2017</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2017-amsterdam.html</value></Data></ExtendedData>
         <Point><coordinates>4.89453979999996,52.3666969,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Брюгге</name><description>2017</description>
+        <name>Брюгге</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2017-amsterdam.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2017</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2017-amsterdam.html</value></Data></ExtendedData>
         <Point><coordinates>3.22469950000004,51.209348,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Прага</name><description>2017</description>
+        <name>Прага</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2017-amsterdam.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2017</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2017-amsterdam.html</value></Data></ExtendedData>
         <Point><coordinates>14.4378005,50.0755381,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Дрезден</name><description>2017</description>
+        <name>Дрезден</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2017-amsterdam.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2017</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2017-amsterdam.html</value></Data></ExtendedData>
         <Point><coordinates>13.7372621,51.0504088,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Калининград</name><description>2018</description>
+        <name>Калининград</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2018-vokrug-adriaticheskogo-morya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2018</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2018-vokrug-adriaticheskogo-morya.html</value></Data></ExtendedData>
         <Point><coordinates>20.4522144,54.7104264,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Вена</name><description>2018</description>
+        <name>Вена</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2018-vokrug-adriaticheskogo-morya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2018</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2018-vokrug-adriaticheskogo-morya.html</value></Data></ExtendedData>
         <Point><coordinates>16.3738189000001,48.2081743,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Венеция</name><description>2018</description>
+        <name>Венеция</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2018-vokrug-adriaticheskogo-morya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2018</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2018-vokrug-adriaticheskogo-morya.html</value></Data></ExtendedData>
         <Point><coordinates>12.3155151,45.4408474,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Крк</name><description>2018</description>
+        <name>Крк</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2018-vokrug-adriaticheskogo-morya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2018</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2018-vokrug-adriaticheskogo-morya.html</value></Data></ExtendedData>
         <Point><coordinates>14.5752113999999,45.0278995,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Бакар</name><description>2018</description>
+        <name>Бакар</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2018-vokrug-adriaticheskogo-morya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2018</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2018-vokrug-adriaticheskogo-morya.html</value></Data></ExtendedData>
         <Point><coordinates>14.5342464,45.3068046,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Дубровник</name><description>2018</description>
+        <name>Дубровник</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2018-vokrug-adriaticheskogo-morya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2018</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2018-vokrug-adriaticheskogo-morya.html</value></Data></ExtendedData>
         <Point><coordinates>18.0944238,42.6506606,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Котор</name><description>2018</description>
+        <name>Котор</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2018-vokrug-adriaticheskogo-morya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2018</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2018-vokrug-adriaticheskogo-morya.html</value></Data></ExtendedData>
         <Point><coordinates>18.771234,42.424662,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Петра</name><description>2018</description>
+        <name>Петра</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2019-izrail.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2018</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2019-izrail.html</value></Data></ExtendedData>
         <Point><coordinates>21.7345740000001,38.2466395,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Афины</name><description>2018</description>
+        <name>Афины</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2018-vokrug-adriaticheskogo-morya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2018</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2018-vokrug-adriaticheskogo-morya.html</value></Data></ExtendedData>
         <Point><coordinates>23.7275388,37.9838096,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Бари</name><description>2018</description>
+        <name>Бари</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2018-vokrug-adriaticheskogo-morya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2018</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2018-vokrug-adriaticheskogo-morya.html</value></Data></ExtendedData>
         <Point><coordinates>16.8718715,41.1171432,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Rodi Garganico</name><description>2018</description>
+        <name>Rodi Garganico</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2018-vokrug-adriaticheskogo-morya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2018</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2018-vokrug-adriaticheskogo-morya.html</value></Data></ExtendedData>
         <Point><coordinates>15.8860288,41.9298281,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Острава</name><description>2018</description>
+        <name>Острава</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2018-vokrug-adriaticheskogo-morya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2018</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2018-vokrug-adriaticheskogo-morya.html</value></Data></ExtendedData>
         <Point><coordinates>18.2625243,49.8209226,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Лондон</name><description>2005</description>
+        <name>Лондон</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2005</value></Data></ExtendedData>
         <Point><coordinates>-0.127758299999982,51.5073509,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Клайпеда</name><description>2010</description>
+        <name>Клайпеда</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2010-kaliningrad-klaypeda.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2010</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2010-kaliningrad-klaypeda.html</value></Data></ExtendedData>
         <Point><coordinates>21.1442795,55.7032948,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Санкт Петербург</name><description>2022</description>
+        <name>Санкт Петербург</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2021-peterburg.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2022</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2021-peterburg.html</value></Data></ExtendedData>
         <Point><coordinates>30.3350986,59.9342802,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Витебск</name><description>2026</description>
+        <name>Витебск</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2026-smolensk-vitebsk.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2026</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2026-smolensk-vitebsk.html</value></Data></ExtendedData>
         <Point><coordinates>30.206359,55.1926809,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Мурманск</name><description>2024</description>
+        <name>Мурманск</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2024-russkiy-sever.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2024</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2024-russkiy-sever.html</value></Data></ExtendedData>
         <Point><coordinates>33.0826597,68.9585244,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Кировск</name><description>2017</description>
+        <name>Кировск</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2017-kirovsk-murmansk.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2017</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2017-kirovsk-murmansk.html</value></Data></ExtendedData>
         <Point><coordinates>33.6724007,67.6107356,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Великий Новгород</name><description>2018</description>
+        <name>Великий Новгород</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2018-vokrug-adriaticheskogo-morya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2018</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2018-vokrug-adriaticheskogo-morya.html</value></Data></ExtendedData>
         <Point><coordinates>31.2741929,58.5255698,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Торжок</name><description>2013</description>
+        <name>Торжок</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2013</value></Data></ExtendedData>
         <Point><coordinates>34.9690757,57.0359338,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Тверь</name><description>2026</description>
+        <name>Тверь</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2026</value></Data></ExtendedData>
         <Point><coordinates>35.9175964999999,56.8587214,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Нижний Новгород</name><description>2025</description>
+        <name>Нижний Новгород</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2025-nizhniy-novgorod-gorodets.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2025</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2025-nizhniy-novgorod-gorodets.html</value></Data></ExtendedData>
         <Point><coordinates>43.936059,56.2965039,0</coordinates></Point>
       </Placemark>
       <Placemark>
@@ -582,135 +582,135 @@
         <Point><coordinates>42.0165852,55.5673975,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Ярославль</name><description>2025</description>
+        <name>Ярославль</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2025</value></Data></ExtendedData>
         <Point><coordinates>39.8844709,57.6260744,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Йошкар-Ола</name><description>2026</description>
+        <name>Йошкар-Ола</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2026-severnoe-trireche.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2026</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2026-severnoe-trireche.html</value></Data></ExtendedData>
         <Point><coordinates>47.883858,56.6402225,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Владивосток</name><description>2025</description>
+        <name>Владивосток</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2025-na-dalniy-vostok.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2025</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2025-na-dalniy-vostok.html</value></Data></ExtendedData>
         <Point><coordinates>131.8869243,43.1198091,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Петропавловск-Камчатский</name><description>1992</description>
+        <name>Петропавловск-Камчатский</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>1992</value></Data></ExtendedData>
         <Point><coordinates>158.677726,53.0409109,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Иваново</name><description>2020</description>
+        <name>Иваново</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2020</value></Data></ExtendedData>
         <Point><coordinates>40.9766453,57.0050671,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Кострома</name><description>2017</description>
+        <name>Кострома</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2017</value></Data></ExtendedData>
         <Point><coordinates>40.9698928,57.7774816,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Вологда</name><description>2026</description>
+        <name>Вологда</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2026-onega.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2026</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2026-onega.html</value></Data></ExtendedData>
         <Point><coordinates>39.8978053000001,59.2180665,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Осташков</name><description>2016</description>
+        <name>Осташков</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2016</value></Data></ExtendedData>
         <Point><coordinates>33.1285156,57.1402682,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Плимут</name><description>2003</description>
+        <name>Плимут</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2003-ssha-boston.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2003</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2003-ssha-boston.html</value></Data></ExtendedData>
         <Point><coordinates>-70.6672621,41.9584457,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Салем</name><description>2003</description>
+        <name>Салем</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2003-ssha-boston.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2003</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2003-ssha-boston.html</value></Data></ExtendedData>
         <Point><coordinates>-70.8967155,42.51954,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Екатеринбург</name><description>2025</description>
+        <name>Екатеринбург</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2025-na-dalniy-vostok.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2025</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2025-na-dalniy-vostok.html</value></Data></ExtendedData>
         <Point><coordinates>60.6454086,56.8430993,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Пермь</name><description>2025</description>
+        <name>Пермь</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2025-na-dalniy-vostok.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2025</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2025-na-dalniy-vostok.html</value></Data></ExtendedData>
         <Point><coordinates>56.2269674,58.0091683,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Свияжск</name><description>2021</description>
+        <name>Свияжск</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2021-ekaterinburg.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2021</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2021-ekaterinburg.html</value></Data></ExtendedData>
         <Point><coordinates>48.6583572,55.7710745,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Уфа</name><description>2021</description>
+        <name>Уфа</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2021-ekaterinburg.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2021</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2021-ekaterinburg.html</value></Data></ExtendedData>
         <Point><coordinates>55.9578555,54.734791,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Новороссийск</name><description>2020</description>
+        <name>Новороссийск</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2020-sochi.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2020</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2020-sochi.html</value></Data></ExtendedData>
         <Point><coordinates>37.7770118,44.7180464,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Красная Поляна</name><description>2020</description>
+        <name>Красная Поляна</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2020-sochi.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2020</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2020-sochi.html</value></Data></ExtendedData>
         <Point><coordinates>40.2100333,43.6805415,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Очамчира</name><description>2020</description>
+        <name>Очамчира</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2020-sochi.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2020</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2020-sochi.html</value></Data></ExtendedData>
         <Point><coordinates>41.4661503,42.7082626,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Адлер</name><description>2020</description>
+        <name>Адлер</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2020-sochi.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2020</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2020-sochi.html</value></Data></ExtendedData>
         <Point><coordinates>39.9339462,43.4343234,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Пицунда</name><description>2023</description>
+        <name>Пицунда</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2023-abhaziya-gruziya-armeniya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2023</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2023-abhaziya-gruziya-armeniya.html</value></Data></ExtendedData>
         <Point><coordinates>40.3405945,43.1631427,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Орду</name><description>2016</description>
+        <name>Орду</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2016-vokrug-chernogo-morya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2016</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2016-vokrug-chernogo-morya.html</value></Data></ExtendedData>
         <Point><coordinates>37.8952317,40.9920975,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Пятигорск</name><description>2018</description>
+        <name>Пятигорск</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2018-kavkaz.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2018</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2018-kavkaz.html</value></Data></ExtendedData>
         <Point><coordinates>43.039636,44.0498933,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Судак</name><description>2019</description>
+        <name>Судак</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2019-krym.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2019</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2019-krym.html</value></Data></ExtendedData>
         <Point><coordinates>34.976183,44.850467,0</coordinates></Point>
       </Placemark>
       <Placemark>
@@ -738,9 +738,9 @@
         <Point><coordinates>39.6812351,56.4990965,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Шуя</name><description>2026</description>
+        <name>Шуя</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2026</value></Data></ExtendedData>
         <Point><coordinates>41.357534,56.8511341,0</coordinates></Point>
       </Placemark>
       <Placemark>
@@ -750,231 +750,231 @@
         <Point><coordinates>41.5122713,57.4604955,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Городец</name><description>2025</description>
+        <name>Городец</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2025-nizhniy-novgorod-gorodets.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2025</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2025-nizhniy-novgorod-gorodets.html</value></Data></ExtendedData>
         <Point><coordinates>43.4724826,56.6449127,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Юрьевец</name><description>2026</description>
+        <name>Юрьевец</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2026-severnoe-trireche.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2026</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2026-severnoe-trireche.html</value></Data></ExtendedData>
         <Point><coordinates>43.1108524,57.3179036,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Вышний Волочёк</name><description>2020</description>
+        <name>Вышний Волочёк</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2020-vyshniy-volochek-sergiev-posad.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2020</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2020-vyshniy-volochek-sergiev-posad.html</value></Data></ExtendedData>
         <Point><coordinates>34.5602638,57.5890147,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Торжок</name><description>2015</description>
+        <name>Торжок</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2015</value></Data></ExtendedData>
         <Point><coordinates>34.9690756,57.0359338,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Выборг</name><description>2019</description>
+        <name>Выборг</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2019-peterburg-vyborg.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2019</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2019-peterburg-vyborg.html</value></Data></ExtendedData>
         <Point><coordinates>28.749044,60.7095622,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Коломна</name><description>2012</description>
+        <name>Коломна</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2012</value></Data></ExtendedData>
         <Point><coordinates>38.7688618,55.0937517,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Сызрань</name><description>2016</description>
+        <name>Сызрань</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2015-uzbekistan.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2016</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2015-uzbekistan.html</value></Data></ExtendedData>
         <Point><coordinates>48.397896,53.1504504,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Сергиев Посад</name><description>2020</description>
+        <name>Сергиев Посад</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2020-vyshniy-volochek-sergiev-posad.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2020</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2020-vyshniy-volochek-sergiev-posad.html</value></Data></ExtendedData>
         <Point><coordinates>38.136706,56.3151766,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Смоленск</name><description>2026</description>
+        <name>Смоленск</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2026-smolensk-vitebsk.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2026</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2026-smolensk-vitebsk.html</value></Data></ExtendedData>
         <Point><coordinates>32.0503663,54.7903112,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Ростов</name><description>2020</description>
+        <name>Ростов</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2014-rostov.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2020</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2014-rostov.html</value></Data></ExtendedData>
         <Point><coordinates>39.4131527,57.195623,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Переславль-Залесский</name><description>2020</description>
+        <name>Переславль-Залесский</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2020</value></Data></ExtendedData>
         <Point><coordinates>38.8902603,56.747048,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Мышкин</name><description>2016</description>
+        <name>Мышкин</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2014-myshkin-yaroslavl.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2016</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2014-myshkin-yaroslavl.html</value></Data></ExtendedData>
         <Point><coordinates>38.4546513,57.7875829,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Углич</name><description>2016</description>
+        <name>Углич</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2014-myshkin-yaroslavl.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2016</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2014-myshkin-yaroslavl.html</value></Data></ExtendedData>
         <Point><coordinates>38.3219031,57.5239298,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Хвбвровск</name><description>2025</description>
+        <name>Хвбвровск</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2025-na-dalniy-vostok.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2025</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2025-na-dalniy-vostok.html</value></Data></ExtendedData>
         <Point><coordinates>135.0720667,48.4814433,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Белогорск</name><description>2021</description>
+        <name>Белогорск</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2021-vladivostok.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2021</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2021-vladivostok.html</value></Data></ExtendedData>
         <Point><coordinates>128.4799681,50.920068,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Могоча</name><description>2025</description>
+        <name>Могоча</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2025-na-dalniy-vostok.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2025</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2025-na-dalniy-vostok.html</value></Data></ExtendedData>
         <Point><coordinates>119.7768102,53.7407254,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Листвянка</name><description>2021</description>
+        <name>Листвянка</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2021-vladivostok.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2021</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2021-vladivostok.html</value></Data></ExtendedData>
         <Point><coordinates>104.8626386,51.8581211,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Иркутск</name><description>2025</description>
+        <name>Иркутск</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2025-na-dalniy-vostok.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2025</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2025-na-dalniy-vostok.html</value></Data></ExtendedData>
         <Point><coordinates>104.2890222,52.2854834,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Красноярск</name><description>2025</description>
+        <name>Красноярск</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2025-na-dalniy-vostok.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2025</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2025-na-dalniy-vostok.html</value></Data></ExtendedData>
         <Point><coordinates>92.8932476,56.0152834,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Новосибирск</name><description>2025</description>
+        <name>Новосибирск</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2025-na-dalniy-vostok.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2025</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2025-na-dalniy-vostok.html</value></Data></ExtendedData>
         <Point><coordinates>82.8963831,54.9832693,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Челябинск</name><description>2024</description>
+        <name>Челябинск</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2023-kyrgyzstan-i-tsentralnaya-aziya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2024</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2023-kyrgyzstan-i-tsentralnaya-aziya.html</value></Data></ExtendedData>
         <Point><coordinates>61.4368431,55.1644419,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Находка</name><description>2025</description>
+        <name>Находка</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2025-na-dalniy-vostok.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2025</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2025-na-dalniy-vostok.html</value></Data></ExtendedData>
         <Point><coordinates>132.9179224,42.8438792,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Уссурийск</name><description>2021</description>
+        <name>Уссурийск</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2021-vladivostok.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2021</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2021-vladivostok.html</value></Data></ExtendedData>
         <Point><coordinates>131.9404906,43.8015045,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Биробиджан</name><description>2021</description>
+        <name>Биробиджан</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2021-vladivostok.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2021</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2021-vladivostok.html</value></Data></ExtendedData>
         <Point><coordinates>132.9306664,48.7879712,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Благовещенск</name><description>2021</description>
+        <name>Благовещенск</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2021-vladivostok.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2021</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2021-vladivostok.html</value></Data></ExtendedData>
         <Point><coordinates>127.5356153,50.2660067,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Омск</name><description>2025</description>
+        <name>Омск</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2025-na-dalniy-vostok.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2025</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2025-na-dalniy-vostok.html</value></Data></ExtendedData>
         <Point><coordinates>73.3645204,54.9913545,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Тюмень</name><description>2021</description>
+        <name>Тюмень</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2021-vladivostok.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2021</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2021-vladivostok.html</value></Data></ExtendedData>
         <Point><coordinates>65.5632369,57.1553394,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Улан-Уде</name><description>2025</description>
+        <name>Улан-Уде</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2025-na-dalniy-vostok.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2025</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2025-na-dalniy-vostok.html</value></Data></ExtendedData>
         <Point><coordinates>107.5840434,51.8335896,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Хужир</name><description>2024</description>
+        <name>Хужир</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2023-kyrgyzstan-i-tsentralnaya-aziya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2024</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2023-kyrgyzstan-i-tsentralnaya-aziya.html</value></Data></ExtendedData>
         <Point><coordinates>107.4098285,53.2178516,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Чита</name><description>2025</description>
+        <name>Чита</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2025-na-dalniy-vostok.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2025</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2025-na-dalniy-vostok.html</value></Data></ExtendedData>
         <Point><coordinates>113.4711906,52.0515032,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Хасан</name><description>2021</description>
+        <name>Хасан</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2021-vladivostok.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2021</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2021-vladivostok.html</value></Data></ExtendedData>
         <Point><coordinates>130.651644,42.4241158,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Дальнереченск</name><description>2021</description>
+        <name>Дальнереченск</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2021-vladivostok.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2021</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2021-vladivostok.html</value></Data></ExtendedData>
         <Point><coordinates>133.7427896,45.9294549,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Балтийск</name><description>2018</description>
+        <name>Балтийск</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2018-vokrug-adriaticheskogo-morya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2018</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2018-vokrug-adriaticheskogo-morya.html</value></Data></ExtendedData>
         <Point><coordinates>19.9228947,54.6591222,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Светлогорск</name><description>2010</description>
+        <name>Светлогорск</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2010-kaliningrad-klaypeda.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2010</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2010-kaliningrad-klaypeda.html</value></Data></ExtendedData>
         <Point><coordinates>20.1584705,54.9394562,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Сарапул</name><description>2021</description>
+        <name>Сарапул</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2021-ekaterinburg.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2021</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2021-ekaterinburg.html</value></Data></ExtendedData>
         <Point><coordinates>53.8171237,56.4770315,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Кимры</name><description>2019</description>
+        <name>Кимры</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2019</value></Data></ExtendedData>
         <Point><coordinates>37.3598916,56.8603977,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Рыбинск</name><description>2021</description>
+        <name>Рыбинск</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2021-rybinsk.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2021</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2021-rybinsk.html</value></Data></ExtendedData>
         <Point><coordinates>38.8116968,58.057486,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Тутаев</name><description>2021</description>
+        <name>Тутаев</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2021-rybinsk.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2021</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2021-rybinsk.html</value></Data></ExtendedData>
         <Point><coordinates>39.5333394,57.8675746,0</coordinates></Point>
       </Placemark>
       <Placemark>
@@ -984,471 +984,471 @@
         <Point><coordinates>40.6563727,55.6062836,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Рыбинск</name><description>2021</description>
+        <name>Рыбинск</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2021-rybinsk.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2021</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2021-rybinsk.html</value></Data></ExtendedData>
         <Point><coordinates>38.8116968,58.057486,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Дмитров</name><description>2021</description>
+        <name>Дмитров</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2021</value></Data></ExtendedData>
         <Point><coordinates>37.5214688,56.3513399,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Кронштадт</name><description>2021</description>
+        <name>Кронштадт</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2021-peterburg.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2021</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2021-peterburg.html</value></Data></ExtendedData>
         <Point><coordinates>29.7655452,59.9959303,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Архангельск</name><description>2026</description>
+        <name>Архангельск</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2026-onega.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2026</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2026-onega.html</value></Data></ExtendedData>
         <Point><coordinates>40.5505768,64.5458549,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Северодвинск</name><description>2026</description>
+        <name>Северодвинск</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2026-onega.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2026</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2026-onega.html</value></Data></ExtendedData>
         <Point><coordinates>39.8505981,64.5661757,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Холмогоры</name><description>2022</description>
+        <name>Холмогоры</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2022-arhangelsk.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2022</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2022-arhangelsk.html</value></Data></ExtendedData>
         <Point><coordinates>41.6481603,64.2266074,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Моши</name><description>2024</description>
+        <name>Моши</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2024-tanzaniya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2024</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2024-tanzaniya.html</value></Data></ExtendedData>
         <Point><coordinates>37.4254444000001,-3.527647,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Дальнегорск</name><description>2025</description>
+        <name>Дальнегорск</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2025-na-dalniy-vostok.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2025</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2025-na-dalniy-vostok.html</value></Data></ExtendedData>
         <Point><coordinates>135.5674263,44.556083,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Терней</name><description>2022</description>
+        <name>Терней</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2022-primore.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2022</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2022-primore.html</value></Data></ExtendedData>
         <Point><coordinates>136.61411,45.0485526,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Калязин</name><description>2022</description>
+        <name>Калязин</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2022</value></Data></ExtendedData>
         <Point><coordinates>37.8281848,57.2409979,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Приозерск</name><description>2022</description>
+        <name>Приозерск</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2022-kareliya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2022</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2022-kareliya.html</value></Data></ExtendedData>
         <Point><coordinates>30.1296525,61.0385976,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Сортавала</name><description>2022</description>
+        <name>Сортавала</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2022-kareliya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2022</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2022-kareliya.html</value></Data></ExtendedData>
         <Point><coordinates>30.697916,61.7064906,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Лахденпохья</name><description>2022</description>
+        <name>Лахденпохья</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2022-kareliya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2022</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2022-kareliya.html</value></Data></ExtendedData>
         <Point><coordinates>30.1977514,61.5197315,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Звенигород</name><description>2022</description>
+        <name>Звенигород</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2022</value></Data></ExtendedData>
         <Point><coordinates>36.8552034,55.7313524,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Найроби</name><description>2022</description>
+        <name>Найроби</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2022-tanzaniya-keniya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2022</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2022-tanzaniya-keniya.html</value></Data></ExtendedData>
         <Point><coordinates>36.8219462,-1.2920659,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Мбамба-Бэй</name><description>2022</description>
+        <name>Мбамба-Бэй</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2022-tanzaniya-keniya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2022</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2022-tanzaniya-keniya.html</value></Data></ExtendedData>
         <Point><coordinates>34.8014395,-11.2864443,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Псков</name><description>2023</description>
+        <name>Псков</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2023-pskov.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2023</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2023-pskov.html</value></Data></ExtendedData>
         <Point><coordinates>28.3344734,57.8166994,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Изборск</name><description>2017</description>
+        <name>Изборск</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2017-vitebsk-izborsk.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2017</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2017-vitebsk-izborsk.html</value></Data></ExtendedData>
         <Point><coordinates>27.8608831,57.708244,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Гродно</name><description>2022</description>
+        <name>Гродно</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2022-grodno.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2022</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2022-grodno.html</value></Data></ExtendedData>
         <Point><coordinates>23.8222673,53.6687634,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Лида</name><description>2022</description>
+        <name>Лида</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2022-grodno.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2022</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2022-grodno.html</value></Data></ExtendedData>
         <Point><coordinates>25.3028153,53.8904386,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Ереван</name><description>2024</description>
+        <name>Ереван</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2023-armeniya-i-zapadnaya-aziya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2024</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2023-armeniya-i-zapadnaya-aziya.html</value></Data></ExtendedData>
         <Point><coordinates>44.515209,40.1872023,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Тегеран</name><description>2023</description>
+        <name>Тегеран</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2023-armeniya-i-zapadnaya-aziya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2023</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2023-armeniya-i-zapadnaya-aziya.html</value></Data></ExtendedData>
         <Point><coordinates>51.3346954,35.7218583,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Гюмри</name><description>2023</description>
+        <name>Гюмри</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2023-armeniya-i-zapadnaya-aziya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2023</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2023-armeniya-i-zapadnaya-aziya.html</value></Data></ExtendedData>
         <Point><coordinates>43.8464971,40.7929026,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Бишкек</name><description>2023</description>
+        <name>Бишкек</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2023-kyrgyzstan-i-tsentralnaya-aziya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2023</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2023-kyrgyzstan-i-tsentralnaya-aziya.html</value></Data></ExtendedData>
         <Point><coordinates>74.5697617,42.8746212,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Ош</name><description>2023</description>
+        <name>Ош</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2023-kyrgyzstan-i-tsentralnaya-aziya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2023</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2023-kyrgyzstan-i-tsentralnaya-aziya.html</value></Data></ExtendedData>
         <Point><coordinates>72.8160976,40.5139985,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Алматы</name><description>2023</description>
+        <name>Алматы</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2023-kyrgyzstan-i-tsentralnaya-aziya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2023</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2023-kyrgyzstan-i-tsentralnaya-aziya.html</value></Data></ExtendedData>
         <Point><coordinates>76.8828618,43.2379761,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Улан-Батор</name><description>2025</description>
+        <name>Улан-Батор</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2025-na-dalniy-vostok.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2025</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2025-na-dalniy-vostok.html</value></Data></ExtendedData>
         <Point><coordinates>106.9155007,47.9220509,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Курган</name><description>2024</description>
+        <name>Курган</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2023-kyrgyzstan-i-tsentralnaya-aziya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2024</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2023-kyrgyzstan-i-tsentralnaya-aziya.html</value></Data></ExtendedData>
         <Point><coordinates>65.3493207,55.4590496,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Саратов</name><description>2024</description>
+        <name>Саратов</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2023-kyrgyzstan-i-tsentralnaya-aziya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2024</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2023-kyrgyzstan-i-tsentralnaya-aziya.html</value></Data></ExtendedData>
         <Point><coordinates>46.0154123,51.5461754,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Хвалынск</name><description>2024</description>
+        <name>Хвалынск</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2023-kyrgyzstan-i-tsentralnaya-aziya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2024</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2023-kyrgyzstan-i-tsentralnaya-aziya.html</value></Data></ExtendedData>
         <Point><coordinates>48.0923302,52.5010192,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Элиста</name><description>2024</description>
+        <name>Элиста</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2023-kyrgyzstan-i-tsentralnaya-aziya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2024</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2023-kyrgyzstan-i-tsentralnaya-aziya.html</value></Data></ExtendedData>
         <Point><coordinates>44.2794012,46.3154883,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Шымкент</name><description>2023</description>
+        <name>Шымкент</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2023-kyrgyzstan-i-tsentralnaya-aziya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2023</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2023-kyrgyzstan-i-tsentralnaya-aziya.html</value></Data></ExtendedData>
         <Point><coordinates>69.5876302,42.320534,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Усть-Каменогорск</name><description>2023</description>
+        <name>Усть-Каменогорск</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2023-kyrgyzstan-i-tsentralnaya-aziya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2023</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2023-kyrgyzstan-i-tsentralnaya-aziya.html</value></Data></ExtendedData>
         <Point><coordinates>82.6017244,49.9749295,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Барнаул</name><description>2024</description>
+        <name>Барнаул</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2023-kyrgyzstan-i-tsentralnaya-aziya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2024</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2023-kyrgyzstan-i-tsentralnaya-aziya.html</value></Data></ExtendedData>
         <Point><coordinates>83.7835737,53.3497499,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Горно-Алтайск</name><description>2024</description>
+        <name>Горно-Алтайск</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2023-kyrgyzstan-i-tsentralnaya-aziya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2024</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2023-kyrgyzstan-i-tsentralnaya-aziya.html</value></Data></ExtendedData>
         <Point><coordinates>85.9601203,51.9587202,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Бийск</name><description>2024</description>
+        <name>Бийск</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2023-kyrgyzstan-i-tsentralnaya-aziya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2024</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2023-kyrgyzstan-i-tsentralnaya-aziya.html</value></Data></ExtendedData>
         <Point><coordinates>85.1462061,52.5097881,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Ховд</name><description>2024</description>
+        <name>Ховд</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2023-kyrgyzstan-i-tsentralnaya-aziya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2024</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2023-kyrgyzstan-i-tsentralnaya-aziya.html</value></Data></ExtendedData>
         <Point><coordinates>91.634756,47.9795218,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Хархорин</name><description>2025</description>
+        <name>Хархорин</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2025-na-dalniy-vostok.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2025</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2025-na-dalniy-vostok.html</value></Data></ExtendedData>
         <Point><coordinates>102.8340449,47.1900322,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Чалус</name><description>2023</description>
+        <name>Чалус</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2023-armeniya-i-zapadnaya-aziya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2023</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2023-armeniya-i-zapadnaya-aziya.html</value></Data></ExtendedData>
         <Point><coordinates>51.4212718,36.6547961,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Талас</name><description>2023</description>
+        <name>Талас</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2023-kyrgyzstan-i-tsentralnaya-aziya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2023</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2023-kyrgyzstan-i-tsentralnaya-aziya.html</value></Data></ExtendedData>
         <Point><coordinates>72.2304571,42.5317628,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Нарын</name><description>2023</description>
+        <name>Нарын</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2023-kyrgyzstan-i-tsentralnaya-aziya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2023</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2023-kyrgyzstan-i-tsentralnaya-aziya.html</value></Data></ExtendedData>
         <Point><coordinates>75.9840587,41.4273946,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Каракол</name><description>2023</description>
+        <name>Каракол</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2023-kyrgyzstan-i-tsentralnaya-aziya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2023</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2023-kyrgyzstan-i-tsentralnaya-aziya.html</value></Data></ExtendedData>
         <Point><coordinates>78.3955986,42.4782102,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Мегри</name><description>2023</description>
+        <name>Мегри</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2023-armeniya-i-zapadnaya-aziya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2023</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2023-armeniya-i-zapadnaya-aziya.html</value></Data></ExtendedData>
         <Point><coordinates>46.2467317,38.9016976,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Анталья</name><description>2023</description>
+        <name>Анталья</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2023-armeniya-i-zapadnaya-aziya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2023</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2023-armeniya-i-zapadnaya-aziya.html</value></Data></ExtendedData>
         <Point><coordinates>30.7133233,36.8968908,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Алания</name><description>2023</description>
+        <name>Алания</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2023-armeniya-i-zapadnaya-aziya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2023</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2023-armeniya-i-zapadnaya-aziya.html</value></Data></ExtendedData>
         <Point><coordinates>31.995408,36.544443,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Татван</name><description>2023</description>
+        <name>Татван</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2023-armeniya-i-zapadnaya-aziya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2023</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2023-armeniya-i-zapadnaya-aziya.html</value></Data></ExtendedData>
         <Point><coordinates>42.281276,38.501998,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Карс</name><description>2023</description>
+        <name>Карс</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2023-armeniya-i-zapadnaya-aziya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2023</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2023-armeniya-i-zapadnaya-aziya.html</value></Data></ExtendedData>
         <Point><coordinates>43.0974525,40.6013378,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Догубаязит</name><description>2023</description>
+        <name>Догубаязит</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2023-armeniya-i-zapadnaya-aziya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2023</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2023-armeniya-i-zapadnaya-aziya.html</value></Data></ExtendedData>
         <Point><coordinates>44.068778,39.547074,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Тараз</name><description>2023</description>
+        <name>Тараз</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2023-kyrgyzstan-i-tsentralnaya-aziya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2023</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2023-kyrgyzstan-i-tsentralnaya-aziya.html</value></Data></ExtendedData>
         <Point><coordinates>71.3979891,42.8983715,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Гусиноозерск</name><description>2024</description>
+        <name>Гусиноозерск</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2023-kyrgyzstan-i-tsentralnaya-aziya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2024</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2023-kyrgyzstan-i-tsentralnaya-aziya.html</value></Data></ExtendedData>
         <Point><coordinates>106.5293698,51.285594,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Усть-Баргузин</name><description>2024</description>
+        <name>Усть-Баргузин</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2023-kyrgyzstan-i-tsentralnaya-aziya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2024</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2023-kyrgyzstan-i-tsentralnaya-aziya.html</value></Data></ExtendedData>
         <Point><coordinates>109.0339077,53.4123591,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Кигома</name><description>2024</description>
+        <name>Кигома</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2024-tanzaniya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2024</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2024-tanzaniya.html</value></Data></ExtendedData>
         <Point><coordinates>29.6615055,-4.8824092,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Мпанда</name><description>2016</description>
+        <name>Мпанда</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2016-tanzaniya-stambul.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2016</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2016-tanzaniya-stambul.html</value></Data></ExtendedData>
         <Point><coordinates>31.0736389,-6.3477635,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Багамойо</name><description>2025</description>
+        <name>Багамойо</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2024-tanzaniya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2025</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2024-tanzaniya.html</value></Data></ExtendedData>
         <Point><coordinates>38.898941,-6.4456338,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Сингида</name><description>2024</description>
+        <name>Сингида</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2024-tanzaniya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2024</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2024-tanzaniya.html</value></Data></ExtendedData>
         <Point><coordinates>34.7630307,-4.8253518,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Табора</name><description>2024</description>
+        <name>Табора</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2024-tanzaniya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2024</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2024-tanzaniya.html</value></Data></ExtendedData>
         <Point><coordinates>32.8197329,-5.0424945,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Ванино</name><description>2025</description>
+        <name>Ванино</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2025-na-dalniy-vostok.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2025</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2025-na-dalniy-vostok.html</value></Data></ExtendedData>
         <Point><coordinates>140.2677956,49.0928583,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Чойболсан</name><description>2025</description>
+        <name>Чойболсан</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2025-na-dalniy-vostok.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2025</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2025-na-dalniy-vostok.html</value></Data></ExtendedData>
         <Point><coordinates>114.5474507,48.0816968,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Борзя</name><description>2025</description>
+        <name>Борзя</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2025-na-dalniy-vostok.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2025</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2025-na-dalniy-vostok.html</value></Data></ExtendedData>
         <Point><coordinates>116.5333509,50.3915439,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Нерчинск</name><description>2025</description>
+        <name>Нерчинск</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2025-na-dalniy-vostok.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2025</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2025-na-dalniy-vostok.html</value></Data></ExtendedData>
         <Point><coordinates>116.5892796,51.9772731,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Аршан</name><description>2025</description>
+        <name>Аршан</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2025-na-dalniy-vostok.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2025</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2025-na-dalniy-vostok.html</value></Data></ExtendedData>
         <Point><coordinates>102.428889,51.908611,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Абакан</name><description>2025</description>
+        <name>Абакан</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2025-na-dalniy-vostok.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2025</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2025-na-dalniy-vostok.html</value></Data></ExtendedData>
         <Point><coordinates>91.4293172,53.7175644,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Кызыл</name><description>2025</description>
+        <name>Кызыл</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2025-na-dalniy-vostok.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2025</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2025-na-dalniy-vostok.html</value></Data></ExtendedData>
         <Point><coordinates>94.4574804,51.7150832,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Томск</name><description>2025</description>
+        <name>Томск</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2025-na-dalniy-vostok.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2025</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2025-na-dalniy-vostok.html</value></Data></ExtendedData>
         <Point><coordinates>84.9480469,56.4884295,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Тобольск</name><description>2025</description>
+        <name>Тобольск</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2025-na-dalniy-vostok.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2025</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2025-na-dalniy-vostok.html</value></Data></ExtendedData>
         <Point><coordinates>68.2777646,58.2227256,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Астара</name><description>2023</description>
+        <name>Астара</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2023-armeniya-i-zapadnaya-aziya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2023</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2023-armeniya-i-zapadnaya-aziya.html</value></Data></ExtendedData>
         <Point><coordinates>48.8687149,38.4224562,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Каргополь</name><description>2026</description>
+        <name>Каргополь</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2026-onega.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2026</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2026-onega.html</value></Data></ExtendedData>
         <Point><coordinates>38.947099,61.5054419,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Кириллов</name><description>2026</description>
+        <name>Кириллов</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2026-onega.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2026</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2026-onega.html</value></Data></ExtendedData>
         <Point><coordinates>38.3786746,59.8616606,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Онега</name><description>2026</description>
+        <name>Онега</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2026-onega.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2026</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2026-onega.html</value></Data></ExtendedData>
         <Point><coordinates>38.0837768,63.9190525,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Великий Устюг</name><description>2026</description>
+        <name>Великий Устюг</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2026-severnoe-trireche.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2026</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2026-severnoe-trireche.html</value></Data></ExtendedData>
         <Point><coordinates>46.3025642,60.7594561,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Котлас</name><description>2026</description>
+        <name>Котлас</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2026-severnoe-trireche.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2026</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2026-severnoe-trireche.html</value></Data></ExtendedData>
         <Point><coordinates>46.6350069,61.2490705,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Яренск</name><description>2026</description>
+        <name>Яренск</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2026-severnoe-trireche.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2026</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2026-severnoe-trireche.html</value></Data></ExtendedData>
         <Point><coordinates>49.0931146,62.1789556,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Сыктывкар</name><description>2026</description>
+        <name>Сыктывкар</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2026-severnoe-trireche.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2026</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2026-severnoe-trireche.html</value></Data></ExtendedData>
         <Point><coordinates>50.8168774,61.6641145,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Юрьевец</name><description>2026</description>
+        <name>Юрьевец</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2026-severnoe-trireche.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2026</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2026-severnoe-trireche.html</value></Data></ExtendedData>
         <Point><coordinates>43.1108524,57.3179036,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Умба</name><description>2024</description>
+        <name>Умба</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2024-russkiy-sever.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2024</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2024-russkiy-sever.html</value></Data></ExtendedData>
         <Point><coordinates>34.3449636,66.6847494,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Кемь</name><description>2024</description>
+        <name>Кемь</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2024-russkiy-sever.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2024</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2024-russkiy-sever.html</value></Data></ExtendedData>
         <Point><coordinates>34.5981891,64.9551847,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Териберка</name><description>2024</description>
+        <name>Териберка</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2024-russkiy-sever.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2024</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2024-russkiy-sever.html</value></Data></ExtendedData>
         <Point><coordinates>35.1190452,69.1826721,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Конья</name><description>2023</description>
+        <name>Конья</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Trip link"><value>https://iamzet.ru/trips/2023-armeniya-i-zapadnaya-aziya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2023</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2023-armeniya-i-zapadnaya-aziya.html</value></Data></ExtendedData>
         <Point><coordinates>32.4931554,37.8746429,0</coordinates></Point>
       </Placemark>
     </Folder>
