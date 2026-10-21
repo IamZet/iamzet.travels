@@ -502,7 +502,7 @@ def _wiki_batch(objs):
     pages, norm = {}, {}
     for i in range(0, len(titles), 40):
         j = _api({'action': 'query', 'redirects': 1, 'prop': 'coordinates|pageimages|pageprops|info', 'inprop': 'url',
-                  'piprop': 'thumbnail', 'pithumbsize': 640, 'ppprop': 'disambiguation|wikibase_item', 'titles': '|'.join(titles[i:i + 40])})['query']
+                  'piprop': 'thumbnail', 'pithumbsize': 640, 'pilimit': 'max', 'colimit': 'max', 'ppprop': 'disambiguation|wikibase_item', 'titles': '|'.join(titles[i:i + 40])})['query']
         for n in j.get('normalized', []) + j.get('redirects', []): norm[n['from']] = n['to']
         for pg in j.get('pages', []): pages[pg['title']] = pg
     def res(t):
@@ -543,6 +543,7 @@ for _o in _pts.values():
     _key = f"{_o['n']}|{_o['la']}|{_o['lo']}"
     _info = _CI.get(_key)
     _new = _fresh.get(id(_o))
+    if _new is not None and not _new.get('url') and _info and _info.get('url'): _new = None  # keep the cached article if lookup came back empty
     if _new is not None:
         try:
             if _new.get('img_src'):
