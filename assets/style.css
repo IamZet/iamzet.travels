@@ -311,3 +311,11 @@ body.lb-open{overflow:hidden}
 #worldmap .leaflet-control-zoom a{background:var(--surface);color:var(--fg);border-color:var(--line)}
 #worldmap .leaflet-control-attribution{background:color-mix(in srgb,var(--surface) 80%,transparent);color:var(--muted);font-size:10px}
 #worldmap .leaflet-control-attribution a{color:var(--muted)}
+
+.archlink{display:flex;align-items:baseline;gap:14px;margin:8px 0 28px;padding:18px 20px;border:1px solid var(--line);border-radius:8px;background:var(--surface);text-decoration:none;color:var(--fg)}
+.archlink:hover{border-color:var(--accent)}
+.archlink .al-k{font-family:var(--f-display);font-weight:700;font-size:20px}
+.archlink .al-t{font-family:var(--f-mono);font-size:13px;color:var(--muted)}
+.archlink .al-n{margin-left:auto;color:var(--accent);font-weight:600}
+.archsub{margin:4px 0 0;font-family:var(--f-mono);font-size:13px;color:var(--muted)}
+#worldmap:focus,#worldmap:focus-visible{outline:none}

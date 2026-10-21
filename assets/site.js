@@ -94,7 +94,7 @@
         var d = [window.__WM.k, window.__WM.c];
         box.innerHTML = '';
         var dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        var map = L.map(box, { zoomSnap: 0.5, minZoom: 2, worldCopyJump: true, attributionControl: true, scrollWheelZoom: false });
+        var map = L.map(box, { zoomSnap: 0.25, minZoom: 1, worldCopyJump: true, attributionControl: true, scrollWheelZoom: false });
         map.on('focus', function () { map.scrollWheelZoom.enable(); });
         map.on('blur', function () { map.scrollWheelZoom.disable(); });
         var acc = css('--accent'), surf = css('--surface');
@@ -181,7 +181,7 @@
           return m;
         });
         var cities = L.featureGroup(pts).addTo(map);
-        map.fitBounds(L.latLngBounds(d[1].filter(function (c) { return c.lo > -30; }).map(function (c) { return [c.la, c.lo]; })), { padding: [24, 24] });
+        map.fitBounds([[-8, -166], [78, 190]], { padding: [0, 0] });
       }).catch(function (er) { if (window.console) console.error(er); box.innerHTML = '<span class="maploading">Не удалось загрузить карту</span>'; });
     }
     function start() {
