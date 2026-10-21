@@ -76,17 +76,53 @@
     });
   }
 
-  // Home: world map, loaded only when the reader expands it
+  // Home: world map (Leaflet + site-coloured layers), loaded only when the reader expands it
   var wm = document.querySelector('.worldmap');
-  if (wm) wm.addEventListener('toggle', function () {
-    if (!wm.open) return;
-    var box = wm.querySelector('.mapbox');
-    if (box.querySelector('iframe')) return;
-    var f = document.createElement('iframe');
-    f.src = 'https://www.google.com/maps/d/embed?mid=' + encodeURIComponent(box.getAttribute('data-mid'));
-    f.title = 'Карта всех поездок';
-    box.innerHTML = ''; box.appendChild(f);
-  });
+  if (wm) {
+    var wmDone = false;
+    var LV = '1.9.4', CDN = 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/' + LV + '/';
+    function loadCss(h) { var l = document.createElement('link'); l.rel = 'stylesheet'; l.href = h; document.head.appendChild(l); }
+    function loadJs(src, cb) { var sc = document.createElement('script'); sc.src = src; sc.onload = function () { cb(); }; sc.onerror = function () { cb(new Error('load')); }; document.head.appendChild(sc); }
+    function css(v) { return getComputedStyle(document.documentElement).getPropertyValue(v).trim(); }
+    function esc(t) { return String(t).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+    function build() {
+      var box = document.getElementById('worldmap');
+      var base = (document.querySelector('link[href*="assets/style.css"]').getAttribute('href') || '').replace(/style\.css.*$/, '');
+      Promise.all([fetch(base + 'map-countries.json').then(function (r) { return r.json(); }), fetch(base + 'map-cities.json').then(function (r) { return r.json(); })]).then(function (d) {
+        box.innerHTML = '';
+        var dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var map = L.map(box, { zoomSnap: 0.5, minZoom: 2, worldCopyJump: true, attributionControl: true, scrollWheelZoom: false });
+        map.on('focus', function () { map.scrollWheelZoom.enable(); });
+        map.on('blur', function () { map.scrollWheelZoom.disable(); });
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/' + (dark ? 'dark' : 'light') + '_all/{z}/{x}/{y}{r}.png', {
+          subdomains: 'abcd', maxZoom: 18,
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'
+        }).addTo(map);
+        var acc = css('--accent'), soft = css('--accent-soft'), muted = css('--muted'), surf = css('--surface');
+        var countries = L.geoJSON(d[0], {
+          style: { color: acc, weight: 1, opacity: .55, fillColor: acc, fillOpacity: dark ? .18 : .12 },
+          onEachFeature: function (f, l) { l.bindTooltip(esc(f.properties.n), { sticky: true, className: 'wm-tip' }); }
+        }).addTo(map);
+        var pts = d[1].map(function (c) {
+          var linked = !!c.s;
+          var m = L.circleMarker([c.la, c.lo], { radius: linked ? 5 : 4, weight: linked ? 1.5 : 1.5, color: linked ? surf : muted, fillColor: linked ? acc : surf, fillOpacity: 1 });
+          var h = '<div class="wm-pop"><b>' + esc(c.n) + '</b>' + (c.y ? '<span class="wm-y">' + esc(c.y) + '</span>' : '') +
+            (linked ? '<a href="trips/' + esc(c.s) + '.html">' + esc(c.t) + ' →</a>' : '') + '</div>';
+          m.bindPopup(h, { closeButton: false, className: 'wm-popup', offset: [0, -2] });
+          m.bindTooltip(esc(c.n), { direction: 'top', offset: [0, -6], className: 'wm-tip' });
+          return m;
+        });
+        var cities = L.featureGroup(pts).addTo(map);
+        map.fitBounds(L.latLngBounds(d[1].filter(function (c) { return c.lo > -30; }).map(function (c) { return [c.la, c.lo]; })), { padding: [24, 24] });
+      }).catch(function (er) { if (window.console) console.error(er); box.innerHTML = '<span class="maploading">Не удалось загрузить карту</span>'; });
+    }
+    wm.addEventListener('toggle', function () {
+      if (!wm.open || wmDone) return; wmDone = true;
+      if (window.L) return build();
+      loadCss(CDN + 'leaflet.min.css');
+      loadJs(CDN + 'leaflet.min.js', function (err) { if (err) { document.getElementById('worldmap').innerHTML = '<span class="maploading">Не удалось загрузить карту</span>'; return; } build(); });
+    });
+  }
 
   // Trip page: tabs (Заметки / Фото / Видео / Карта)
   var tabs = Array.prototype.slice.call(document.querySelectorAll('.tab'));
