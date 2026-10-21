@@ -88,7 +88,8 @@
     function build() {
       var box = document.getElementById('worldmap');
       var base = (document.querySelector('link[href*="assets/style.css"]').getAttribute('href') || '').replace(/style\.css.*$/, '');
-      Promise.all([fetch(base + 'map-countries.json').then(function (r) { return r.json(); }), fetch(base + 'map-cities.json').then(function (r) { return r.json(); })]).then(function (d) {
+      new Promise(function (ok, no) { if (window.__WM) return ok(); loadJs(base + 'map-data.js?v=' + (document.querySelector('script[src*="site.js"]').src.split('v=')[1] || ''), function (e) { e ? no(e) : ok(); }); }).then(function () {
+        var d = [window.__WM.k, window.__WM.c];
         box.innerHTML = '';
         var dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
         var map = L.map(box, { zoomSnap: 0.5, minZoom: 2, worldCopyJump: true, attributionControl: true, scrollWheelZoom: false });
