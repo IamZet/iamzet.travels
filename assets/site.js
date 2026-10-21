@@ -112,13 +112,13 @@
         var wcache = {};
         function wiki(c) {
           if (wcache[c.n]) return wcache[c.n];
-          var tries = [c.w || c.n, c.n + ' (город)'];
+          var tries = [c.w || c.n, c.n + ' (город)', c.n];
           function get(i) {
             if (i >= tries.length) return Promise.resolve(null);
             return fetch('https://ru.wikipedia.org/api/rest_v1/page/summary/' + encodeURIComponent(tries[i].replace(/ /g, '_')) + '?redirect=true')
               .then(function (r) { return r.ok ? r.json() : null; })
               .then(function (j) {
-                var ok = j && j.type !== 'disambiguation' && (!j.coordinates || km(c.la, c.lo, j.coordinates.lat, j.coordinates.lon) < 60);
+                var ok = j && j.type !== 'disambiguation' && j.coordinates && km(c.la, c.lo, j.coordinates.lat, j.coordinates.lon) < 60;
                 return ok ? j : get(i + 1);
               }, function () { return get(i + 1); });
           }
