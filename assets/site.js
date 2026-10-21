@@ -76,7 +76,7 @@
     });
   }
 
-  // Home: world map (Leaflet + site-coloured layers), loaded only when the reader expands it
+  // Home: world map (Leaflet + site-coloured layers), loaded when it nears the viewport
   var wm = document.querySelector('.worldmap');
   if (wm) {
     var wmDone = false;
@@ -117,12 +117,16 @@
         map.fitBounds(L.latLngBounds(d[1].filter(function (c) { return c.lo > -30; }).map(function (c) { return [c.la, c.lo]; })), { padding: [24, 24] });
       }).catch(function (er) { if (window.console) console.error(er); box.innerHTML = '<span class="maploading">Не удалось загрузить карту</span>'; });
     }
-    wm.addEventListener('toggle', function () {
-      if (!wm.open || wmDone) return; wmDone = true;
+    function start() {
+      if (wmDone) return; wmDone = true;
       if (window.L) return build();
       loadCss(CDN + 'leaflet.min.css');
       loadJs(CDN + 'leaflet.min.js', function (err) { if (err) { document.getElementById('worldmap').innerHTML = '<span class="maploading">Не удалось загрузить карту</span>'; return; } build(); });
-    });
+    }
+    if ('IntersectionObserver' in window) {
+      var wio = new IntersectionObserver(function (es) { if (es.some(function (e) { return e.isIntersecting; })) { wio.disconnect(); start(); } }, { rootMargin: '300px' });
+      wio.observe(wm);
+    } else start();
   }
 
   // Trip page: tabs (Заметки / Фото / Видео / Карта)
