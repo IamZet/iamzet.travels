@@ -480,38 +480,71 @@ _CI_PATH = os.path.join(S, 'city_info.json')
 _CI = json.load(open(_CI_PATH, encoding='utf-8')) if os.path.exists(_CI_PATH) else {}
 _UA = {'User-Agent': 'iamzet.travels site builder (https://iamzet.ru; alex.m.zakharov@gmail.com)'}
 def _get(url, raw=False):
+    import time; time.sleep(0.05)
     with urllib.request.urlopen(urllib.request.Request(url, headers=_UA), timeout=15) as r:
         b = r.read()
     return b if raw else json.loads(b.decode('utf-8'))
 def _km(a1, o1, a2, o2):
     r = math.pi / 180; x = (o2 - o1) * r * math.cos((a1 + a2) / 2 * r); y = (a2 - a1) * r
     return math.hypot(x, y) * 6371
-def _wiki(o):
-    for title in dict.fromkeys([o.get('w') or o['n'], o['n'] + ' (город)', o['n']]):
+def _api(params, host='ru.wikipedia.org'):
+    import time
+    for i in range(4):
         try:
-            j = _get('https://ru.wikipedia.org/api/rest_v1/page/summary/' + urllib.parse.quote(title.replace(' ', '_')) + '?redirect=true')
-        except Exception:
-            continue
-        c = j.get('coordinates')
-        if j.get('type') == 'disambiguation' or not c or _km(o['la'], o['lo'], c['lat'], c['lon']) > 60: continue
-        out = {'url': j.get('content_urls', {}).get('desktop', {}).get('page', ''), 'site': '', 'img_src': (j.get('thumbnail') or {}).get('source', '')}
-        if j.get('wikibase_item'):
-            try:
-                w = _get('https://www.wikidata.org/w/api.php?action=wbgetclaims&format=json&property=P856&entity=' + j['wikibase_item'])
-                out['site'] = w['claims']['P856'][0]['mainsnak']['datavalue']['value']
-            except Exception: pass
-        return out
-    return {'url': '', 'site': '', 'img_src': ''}
+            return _get(f'https://{host}/w/api.php?' + urllib.parse.urlencode(dict(params, format='json', formatversion=2)))
+        except Exception as ex:
+            err = ex; time.sleep(2 * (i + 1))
+    raise err
+def _wiki_batch(objs):
+    """Resolve each city to a ru.wikipedia article near its point (<60 km): image, url, official site."""
+    cands = {id(o): list(dict.fromkeys([o.get('w') or o['n'], o['n'] + ' (город)', o['n']])) for o in objs}
+    titles = sorted({t for v in cands.values() for t in v})
+    pages, norm = {}, {}
+    for i in range(0, len(titles), 40):
+        j = _api({'action': 'query', 'redirects': 1, 'prop': 'coordinates|pageimages|pageprops|info', 'inprop': 'url',
+                  'piprop': 'thumbnail', 'pithumbsize': 640, 'ppprop': 'disambiguation|wikibase_item', 'titles': '|'.join(titles[i:i + 40])})['query']
+        for n in j.get('normalized', []) + j.get('redirects', []): norm[n['from']] = n['to']
+        for pg in j.get('pages', []): pages[pg['title']] = pg
+    def res(t):
+        seen = 0
+        while t in norm and seen < 5: t = norm[t]; seen += 1
+        return pages.get(t)
+    out, qids = {}, {}
+    for o in objs:
+        r = {'url': '', 'site': '', 'img_src': ''}
+        for t in cands[id(o)]:
+            pg = res(t)
+            if not pg or pg.get('missing') or 'disambiguation' in pg.get('pageprops', {}): continue
+            c = (pg.get('coordinates') or [None])[0]
+            if not c or _km(o['la'], o['lo'], c['lat'], c['lon']) > 60: continue
+            r = {'url': pg.get('fullurl', ''), 'site': '', 'img_src': (pg.get('thumbnail') or {}).get('source', '')}
+            q = pg.get('pageprops', {}).get('wikibase_item')
+            if q: qids[q] = r
+            break
+        out[id(o)] = r
+    ql = sorted(qids)
+    for i in range(0, len(ql), 40):
+        try:
+            ents = _api({'action': 'wbgetentities', 'ids': '|'.join(ql[i:i + 40]), 'props': 'claims'}, host='www.wikidata.org')['entities']
+            for q, ent in ents.items():
+                try: qids[q]['site'] = ent['claims']['P856'][0]['mainsnak']['datavalue']['value']
+                except Exception: pass
+        except Exception as ex: print('wikidata failed', ex)
+    return out
 _online = True
 try: _get('https://ru.wikipedia.org/api/rest_v1/page/summary/' + urllib.parse.quote('Владимир_(город)'))
 except Exception as _ex: _online = False; print('wikipedia unreachable:', _ex)
 os.makedirs(os.path.join(OUT, 'assets', 'cities'), exist_ok=True)
+_fresh = {}
+if _online:
+    try: _fresh = _wiki_batch(list(_pts.values()))
+    except Exception as _ex: print('wikipedia lookup failed:', _ex)
 for _o in _pts.values():
     _key = f"{_o['n']}|{_o['la']}|{_o['lo']}"
     _info = _CI.get(_key)
-    if _online:
+    _new = _fresh.get(id(_o))
+    if _new is not None:
         try:
-            _new = _wiki(_o)
             if _new.get('img_src'):
                 _fn = _hh.sha1(_key.encode()).hexdigest()[:12] + '.webp'
                 if not (_info and _info.get('img_src') == _new['img_src'] and os.path.exists(os.path.join(OUT, 'assets', 'cities', _fn))):
@@ -524,7 +557,8 @@ for _o in _pts.values():
                 _new['img'] = _fn
             _info = _new
         except Exception as _ex:
-            print('city info failed', _o['n'], _ex)
+            print('city image failed', _o['n'], _ex)
+            if _info is None: _info = dict(_new, img_src='')
     if _info:
         _CI[_key] = _info
         _o['wi'] = {k: _info.get(k, '') for k in ('img', 'url', 'site') if _info.get(k)}
