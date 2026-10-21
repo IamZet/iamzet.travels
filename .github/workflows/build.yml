@@ -1,0 +1,35 @@
+name: Build site
+
+# Regenerates index.html, archive.html, trips/*.html and assets/* from src/ and maps/
+# whenever those change, and commits the result. GitHub Pages then publishes it.
+on:
+  push:
+    branches: [main]
+    paths: ['src/**', 'maps/**', '.github/workflows/build.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-site
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install shapely
+      - run: python src/build.py
+      - name: Commit generated pages
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A index.html archive.html trips assets
+          if git diff --cached --quiet; then echo "Nothing changed"; exit 0; fi
+          git commit -m "Rebuild site"
+          git push

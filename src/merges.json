@@ -1,0 +1,49 @@
+{
+ "2023-abhaziya-gruziya-armeniya": {
+  "from": [
+   "2023-abhaziya",
+   "2023-gruziya-armeniya"
+  ],
+  "n": "Абхазия - Грузия - Армения",
+  "y": 2023,
+  "w": "Август - Сентябрь"
+ },
+ "2004-ssha-boston-nyu-york": {
+  "from": [
+   "2004-ssha-boston-nyu-york"
+  ],
+  "n": "США. Бостон - Нью-Йорк",
+  "y": 2004,
+  "w": "Апрель - Сентябрь"
+ },
+ "2023-kyrgyzstan-i-tsentralnaya-aziya": {
+  "from": [
+   "2023-kyrgyzstan",
+   "2023-alma-ata",
+   "2024-tsentralnaya-aziya"
+  ],
+  "n": "Кыргызстан и Центральная Азия",
+  "y": 2023,
+  "w": "Октябрь - Февраль",
+  "maplabels": [
+   "Кыргызстан",
+   "Алма-Ата",
+   "Алтай - Монголия - Байкал"
+  ]
+ },
+ "2023-armeniya-i-zapadnaya-aziya": {
+  "from": [
+   "2023-armeniya",
+   "2023-gruziya-turtsiya",
+   "2023-iran"
+  ],
+  "n": "Армения и Западная Азия",
+  "y": 2023,
+  "w": "Март - Июнь",
+  "maplabels": [
+   "Армения",
+   "Грузия - Турция",
+   "Иран"
+  ]
+ }
+}
