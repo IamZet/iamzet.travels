@@ -76,6 +76,18 @@
     });
   }
 
+  // Home: world map, loaded only when the reader expands it
+  var wm = document.querySelector('.worldmap');
+  if (wm) wm.addEventListener('toggle', function () {
+    if (!wm.open) return;
+    var box = wm.querySelector('.mapbox');
+    if (box.querySelector('iframe')) return;
+    var f = document.createElement('iframe');
+    f.src = 'https://www.google.com/maps/d/embed?mid=' + encodeURIComponent(box.getAttribute('data-mid'));
+    f.title = 'Карта всех поездок';
+    box.innerHTML = ''; box.appendChild(f);
+  });
+
   // Trip page: tabs (Заметки / Фото / Видео / Карта)
   var tabs = Array.prototype.slice.call(document.querySelectorAll('.tab'));
   if (tabs.length) {

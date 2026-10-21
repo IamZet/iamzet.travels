@@ -277,3 +277,10 @@ body.lb-open{overflow:hidden}
 :root:not([data-vsrc="yt"]) .yt.has-dz .th-yt, :root:not([data-vsrc="yt"]) .yt.has-dz .l-yt{display:none}
 :root[data-vsrc="yt"] .yt.has-yt .th-dz, :root[data-vsrc="yt"] .yt.has-yt .l-dz{display:none}
 .yt img.th-dz,.yt img.th-yt{width:100%;height:100%;object-fit:cover}
+
+.worldmap{margin:8px 0 18px}
+.worldmap summary{cursor:pointer;list-style:none;display:inline-flex;align-items:center;gap:6px}
+.worldmap summary::-webkit-details-marker{display:none}
+.worldmap summary::after{content:'↓'}
+.worldmap[open] summary::after{content:'↑'}
+.worldmap .mapbox{margin-top:10px}
