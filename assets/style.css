@@ -321,4 +321,3 @@ body.lb-open{overflow:hidden}
 #worldmap:focus,#worldmap:focus-visible{outline:none}
 #worldmap .leaflet-interactive:focus,#worldmap path:focus{outline:none}
 .vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
-body.home:not(.arch) .latest{padding-top:32px}
