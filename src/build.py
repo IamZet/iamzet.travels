@@ -503,8 +503,8 @@ def _wiki(o):
         return out
     return {'url': '', 'site': '', 'img_src': ''}
 _online = True
-try: _get('https://ru.wikipedia.org/api/rest_v1/page/summary/Владимир_(город)')
-except Exception: _online = False
+try: _get('https://ru.wikipedia.org/api/rest_v1/page/summary/' + urllib.parse.quote('Владимир_(город)'))
+except Exception as _ex: _online = False; print('wikipedia unreachable:', _ex)
 os.makedirs(os.path.join(OUT, 'assets', 'cities'), exist_ok=True)
 for _o in _pts.values():
     _key = f"{_o['n']}|{_o['la']}|{_o['lo']}"
