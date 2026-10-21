@@ -156,8 +156,8 @@
           var h = '<div class="wm-pop"><div class="wm-img"></div><div class="wm-body"><b>' + esc(c.n) + '</b>';
           h += '<div class="wm-meta">' + (c.c ? '<span class="wm-c"><img src="' + flagBase + c.c + '.svg" alt="" width="16" height="12">' + esc(CN[c.c] || '') + '</span>' : '') + '</div>';
           h += '<div class="wm-ext"></div></div>';
-          h += '<div class="wm-last"><span class="wm-lbl">Последнее посещение</span><div class="wm-row"><span class="wm-y">' + esc(c.y || '—') + '</span>' +
-            (c.s ? '<a class="wm-trip" href="trips/' + esc(c.s) + '.html" target="_blank" rel="noopener" title="' + esc(c.t) + '">' + esc(c.t) + ' →</a>' : '') + '</div></div>';
+          h += '<div class="wm-last">' + (c.y || c.s ? '<span class="wm-lbl">Последнее посещение</span><div class="wm-row">' + (c.y ? '<span class="wm-y">' + esc(c.y) + '</span>' : '') +
+            (c.s ? '<a class="wm-trip" href="trips/' + esc(c.s) + '.html" target="_blank" rel="noopener" title="' + esc(c.t) + '">' + esc(c.t) + ' →</a>' : '') + '</div>' : '') + '</div>';
           return h + '</div>';
         }
         function fill(el, w) {
