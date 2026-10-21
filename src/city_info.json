@@ -413,9 +413,10 @@
 "img": "5de3860bd782.webp"
 },
 "Домбай|43.2894|41.6235": {
-"url": "",
-"site": "",
-"img_src": ""
+"url": "https://ru.wikipedia.org/wiki/%D0%94%D0%BE%D0%BC%D0%B1%D0%B0%D0%B9_(%D0%BA%D1%83%D1%80%D0%BE%D1%80%D1%82%D0%BD%D1%8B%D0%B9_%D0%BF%D0%BE%D1%81%D1%91%D0%BB%D0%BE%D0%BA)",
+"site": "https://dombai.online/",
+"img_src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/%D0%94%D0%BE%D0%BC%D0%B1%D0%B0%D0%B9_2023.5_13.jpg/960px-%D0%94%D0%BE%D0%BC%D0%B1%D0%B0%D0%B9_2023.5_13.jpg?utm_source=ru.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+"img": "6d2f5488537d.webp"
 },
 "Дрезден|51.0504|13.7373": {
 "url": "https://ru.wikipedia.org/wiki/%D0%94%D1%80%D0%B5%D0%B7%D0%B4%D0%B5%D0%BD",
@@ -694,9 +695,10 @@
 "img": "8eeef0a8d9ae.webp"
 },
 "Листвянка|51.8581|104.8626": {
-"url": "",
+"url": "https://ru.wikipedia.org/wiki/%D0%9B%D0%B8%D1%81%D1%82%D0%B2%D1%8F%D0%BD%D0%BA%D0%B0_(%D0%98%D1%80%D0%BA%D1%83%D1%82%D1%81%D0%BA%D0%B8%D0%B9_%D1%80%D0%B0%D0%B9%D0%BE%D0%BD)",
 "site": "",
-"img_src": ""
+"img_src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Listvyanka_poselok.JPG/960px-Listvyanka_poselok.JPG?utm_source=ru.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+"img": "d43f34845c4c.webp"
 },
 "Лондон|51.5074|-0.1278": {
 "url": "https://ru.wikipedia.org/wiki/%D0%9B%D0%BE%D0%BD%D0%B4%D0%BE%D0%BD",
@@ -799,9 +801,10 @@
 "img": "692de0c54b57.webp"
 },
 "Несебар|42.6601|27.7206": {
-"url": "",
-"site": "",
-"img_src": ""
+"url": "https://ru.wikipedia.org/wiki/%D0%9D%D0%B5%D1%81%D0%B5%D0%B1%D1%8B%D1%80",
+"site": "http://www.nesebarinfo.com",
+"img_src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Nessebar_lead_collage.jpg/960px-Nessebar_lead_collage.jpg?utm_source=ru.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+"img": "abde99525907.webp"
 },
 "Нижний Новгород|56.2965|43.9361": {
 "url": "https://ru.wikipedia.org/wiki/%D0%9D%D0%B8%D0%B6%D0%BD%D0%B8%D0%B9_%D0%9D%D0%BE%D0%B2%D0%B3%D0%BE%D1%80%D0%BE%D0%B4",
@@ -960,9 +963,10 @@
 "img": "e7aca205e594.webp"
 },
 "Ростов|57.1956|39.4132": {
-"url": "",
-"site": "",
-"img_src": ""
+"url": "https://ru.wikipedia.org/wiki/%D0%A0%D0%BE%D1%81%D1%82%D0%BE%D0%B2_%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%B8%D0%B9",
+"site": "http://grad-rostov.ru/",
+"img_src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Rostov_Veliky_panoramic_crop.png/960px-Rostov_Veliky_panoramic_crop.png?utm_source=ru.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+"img": "5785947f0102.webp"
 },
 "Рыбинск|58.0575|38.8117": {
 "url": "https://ru.wikipedia.org/wiki/%D0%A0%D1%8B%D0%B1%D0%B8%D0%BD%D1%81%D0%BA",
@@ -1019,14 +1023,16 @@
 "img": "9f7aafccbe79.webp"
 },
 "Сауз Бенд|41.6764|-86.252": {
-"url": "",
-"site": "",
-"img_src": ""
+"url": "https://ru.wikipedia.org/wiki/%D0%A1%D0%B0%D1%83%D1%82-%D0%91%D0%B5%D0%BD%D0%B4_(%D0%98%D0%BD%D0%B4%D0%B8%D0%B0%D0%BD%D0%B0)",
+"site": "http://www.southbendin.gov/",
+"img_src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Flag_of_South_Bend%2C_Indiana.svg/960px-Flag_of_South_Bend%2C_Indiana.svg.png?utm_source=ru.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+"img": "edb12685a16c.webp"
 },
 "Светлогорск|54.9395|20.1585": {
-"url": "",
-"site": "",
-"img_src": ""
+"url": "https://ru.wikipedia.org/wiki/%D0%A1%D0%B2%D0%B5%D1%82%D0%BB%D0%BE%D0%B3%D0%BE%D1%80%D1%81%D0%BA_(%D0%9A%D0%B0%D0%BB%D0%B8%D0%BD%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4%D1%81%D0%BA%D0%B0%D1%8F_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C)",
+"site": "https://svetlogorsk39.ru/",
+"img_src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/%D0%92%D0%BE%D0%B4%D0%BE%D0%BD%D0%B0%D0%BF%D0%BE%D1%80%D0%BD%D0%B0%D1%8F_%D0%B1%D0%B0%D1%88%D0%BD%D1%8F_%D0%B2_%D0%A1%D0%B2%D0%B5%D1%82%D0%BB%D0%BE%D0%B3%D0%BE%D1%80%D1%81%D0%BA%D0%B5.jpg/960px-%D0%92%D0%BE%D0%B4%D0%BE%D0%BD%D0%B0%D0%BF%D0%BE%D1%80%D0%BD%D0%B0%D1%8F_%D0%B1%D0%B0%D1%88%D0%BD%D1%8F_%D0%B2_%D0%A1%D0%B2%D0%B5%D1%82%D0%BB%D0%BE%D0%B3%D0%BE%D1%80%D1%81%D0%BA%D0%B5.jpg?utm_source=ru.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+"img": "f30e9fc274e4.webp"
 },
 "Свияжск|55.7711|48.6584": {
 "url": "https://ru.wikipedia.org/wiki/%D0%A1%D0%B2%D0%B8%D1%8F%D0%B6%D1%81%D0%BA",
@@ -1164,9 +1170,10 @@
 "img_src": ""
 },
 "Териберка|69.1827|35.119": {
-"url": "",
+"url": "https://ru.wikipedia.org/wiki/%D0%A2%D0%B5%D1%80%D0%B8%D0%B1%D0%B5%D1%80%D0%BA%D0%B0_(%D1%81%D0%B5%D0%BB%D0%BE)",
 "site": "",
-"img_src": ""
+"img_src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Teriberka.jpg/960px-Teriberka.jpg?utm_source=ru.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+"img": "e591ebcc3bf1.webp"
 },
 "Терней|45.0486|136.6141": {
 "url": "https://ru.wikipedia.org/wiki/%D0%A2%D0%B5%D1%80%D0%BD%D0%B5%D0%B9",
@@ -1199,9 +1206,10 @@
 "img": "1068d1ee206a.webp"
 },
 "Трескол|43.2571|42.514": {
-"url": "",
-"site": "",
-"img_src": ""
+"url": "https://ru.wikipedia.org/wiki/%D0%A2%D0%B5%D1%80%D1%81%D0%BA%D0%BE%D0%BB",
+"site": "http://www.terskol.net",
+"img_src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/%D0%A1%D0%B5%D0%BB%D0%BE_%D0%A2%D0%B5%D1%80%D1%81%D0%BA%D0%BE%D0%BB_%D1%81_%D0%B2%D1%8B%D1%81%D0%BE%D1%82%D1%8B.jpg/960px-%D0%A1%D0%B5%D0%BB%D0%BE_%D0%A2%D0%B5%D1%80%D1%81%D0%BA%D0%BE%D0%BB_%D1%81_%D0%B2%D1%8B%D1%81%D0%BE%D1%82%D1%8B.jpg?utm_source=ru.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+"img": "c27d49e2652d.webp"
 },
 "Туапсе|44.1065|39.0806": {
 "url": "https://ru.wikipedia.org/wiki/%D0%A2%D1%83%D0%B0%D0%BF%D1%81%D0%B5",
@@ -1318,9 +1326,10 @@
 "img": "d5b1b545ad56.webp"
 },
 "Хужир|53.2179|107.4098": {
-"url": "",
+"url": "https://ru.wikipedia.org/wiki/%D0%A5%D1%83%D0%B6%D0%B8%D1%80_(%D0%98%D1%80%D0%BA%D1%83%D1%82%D1%81%D0%BA%D0%B0%D1%8F_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C)",
 "site": "",
-"img_src": ""
+"img_src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Khuzhir%2C_Irkutsk_Oblast_2025.jpg/960px-Khuzhir%2C_Irkutsk_Oblast_2025.jpg?utm_source=ru.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+"img": "15d84d1f34c2.webp"
 },
 "Чалус|36.6548|51.4213": {
 "url": "https://ru.wikipedia.org/wiki/%D0%A7%D0%B0%D0%BB%D1%83%D1%81",
