@@ -48,7 +48,7 @@ a.hbar:hover span{filter:brightness(1.15)}
 .feats::-webkit-scrollbar{display:none}
 .feats>*{scroll-snap-align:start}
 .feats:focus-visible{outline:none}
-.lhead{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
+.lhead{display:flex;align-items:center;justify-content:flex-end;margin-bottom:12px}
 .lhead .kicker{margin:0}
 .cnav{display:flex;gap:8px}
 .cnav button{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;border:1px solid var(--line);background:var(--surface);color:var(--fg);cursor:pointer;padding:0}
@@ -339,3 +339,5 @@ body.lb-open{overflow:hidden}
 .au-l a{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;border:1px solid var(--line);color:var(--fg);background:var(--bg)}
 .au-l a:hover{border-color:var(--accent);color:var(--accent)}
 @media (max-width:560px){.feats{grid-auto-columns:78%;gap:12px}.cnav{display:none}}
+body.home:not(.arch) .latest{padding-top:28px}
+@media (max-width:560px){body.home:not(.arch) .latest{padding-top:20px}}
