@@ -88,20 +88,23 @@
     function build() {
       var box = document.getElementById('worldmap');
       var base = (document.querySelector('link[href*="assets/style.css"]').getAttribute('href') || '').replace(/style\.css.*$/, '');
-      new Promise(function (ok, no) { if (window.__WM) return ok(); loadJs(base + 'map-data.js?v=' + (document.querySelector('script[src*="site.js"]').src.split('v=')[1] || ''), function (e) { e ? no(e) : ok(); }); }).then(function () {
+      var ver = (document.querySelector('script[src*="site.js"]').src.split('v=')[1] || '');
+      function need(name, file) { return new Promise(function (ok, no) { if (window[name]) return ok(); loadJs(base + file + '?v=' + ver, function (e) { e ? no(e) : ok(); }); }); }
+      Promise.all([need('__WM', 'map-data.js'), need('__WW', 'map-world.js')]).then(function () {
         var d = [window.__WM.k, window.__WM.c];
         box.innerHTML = '';
         var dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
         var map = L.map(box, { zoomSnap: 0.5, minZoom: 2, worldCopyJump: true, attributionControl: true, scrollWheelZoom: false });
         map.on('focus', function () { map.scrollWheelZoom.enable(); });
         map.on('blur', function () { map.scrollWheelZoom.disable(); });
-        var esri = 'https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_' + (dark ? 'Dark' : 'Light') + '_Gray_';
-        L.tileLayer(esri + 'Base/MapServer/tile/{z}/{y}/{x}', { maxZoom: 16, attribution: 'Tiles &copy; Esri &mdash; Esri, HERE, Garmin, &copy; OpenStreetMap' }).addTo(map);
+        var acc = css('--accent'), surf = css('--surface');
+        map.createPane('land'); map.getPane('land').style.zIndex = 250;
+        L.geoJSON(window.__WW.land, { pane: 'land', interactive: false, style: { stroke: false, fillColor: css('--map-land'), fillOpacity: 1 } }).addTo(map);
+        L.geoJSON(window.__WW.borders, { pane: 'land', interactive: false, style: { color: css('--map-border'), weight: .7, opacity: 1, fill: false } }).addTo(map);
         map.createPane('labels'); map.getPane('labels').style.zIndex = 350; map.getPane('labels').style.pointerEvents = 'none';
-        L.tileLayer(esri + 'Reference/MapServer/tile/{z}/{y}/{x}', { maxZoom: 16, pane: 'labels' }).addTo(map);
-        var acc = css('--accent'), soft = css('--accent-soft'), muted = css('--muted'), surf = css('--surface');
+        L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_' + (dark ? 'Dark' : 'Light') + '_Gray_Reference/MapServer/tile/{z}/{y}/{x}', { maxZoom: 16, pane: 'labels', attribution: 'Natural Earth · Labels &copy; Esri' }).addTo(map);
         var countries = L.geoJSON(d[0], {
-          style: { color: acc, weight: 1, opacity: .55, fillColor: acc, fillOpacity: dark ? .18 : .12 },
+          style: { color: acc, weight: 1, opacity: .55, fillColor: acc, fillOpacity: dark ? .28 : .2 },
           onEachFeature: function (f, l) { l.bindTooltip(esc(f.properties.n), { sticky: true, className: 'wm-tip' }); }
         }).addTo(map);
         var CN = window.__WM.cn || {}, flagBase = base + 'flags/';
