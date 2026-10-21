@@ -226,7 +226,7 @@ SOC_ICONS = [  # generic pictograms (not brand marks)
 AU_LINKS = ''.join(('<a href="%s" title="%s" aria-label="%s">%s</a>' if u.startswith('mailto:') else '<a href="%s" target="_blank" rel="noopener" title="%s" aria-label="%s">%s</a>') % (u, n, n, ic) for n, u, ic in SOC_ICONS)
 YT_AVATAR = 'https://yt3.googleusercontent.com/VCV5s0xMYvfGBBXp79TL5JZM0dhkc3p_IdxonkBYF7Lofq0zzr30_OuFVT5qtI9wx7KWGdDy=s176-c-k-c0x00ffffff-no-rj'
 _av = f'<img src="assets/{_me}" alt="" width="128" height="128">' if _me else f'<img src="{YT_AVATAR}" alt="" width="64" height="64" referrerpolicy="no-referrer" onerror="this.remove()"><span>АЗ</span>'
-AUTHOR = f'''<aside class="author" aria-label="Об авторе"><div class="av">{_av}</div><div class="au-b"><div class="au-n">Александр Захаров</div>
+AUTHOR = f'''<aside class="author" aria-label="Об авторе"><div class="av">{_av}</div><div class="au-b"><div class="au-n">Александр Захаров</div><div class="au-d">На машине по России и не только</div>
 <div class="au-l">{AU_LINKS}</div></div></aside>'''
 EMPTY = '<p class="empty" id="empty" hidden>Ничего не нашлось. Попробуйте другое название или снимите фильтры.</p>'
 SOCIAL = ' · '.join(f'<a href="{u}" target="_blank" rel="noopener">{n}</a>' for n, u in (('YouTube', 'https://www.youtube.com/@alex.zakharov'), ('Telegram', 'https://t.me/iamzet'), ('Дзен', 'https://dzen.ru/alexzakharov'))) + ' · <a href="mailto:alex.m.zakharov@gmail.com">alex.m.zakharov@gmail.com</a>'
@@ -236,11 +236,8 @@ TRAVELS_LINK = f'<a class="archlink" href="travels.html"><span class="al-k">Пу
 ARCH_LINK = f'<a class="archlink" href="archive.html"><span class="al-k">Архив</span><span class="al-t">{min(archY)}–{max(archY)}</span><span class="al-n">{nArch} {plural(nArch, "поездка", "поездки", "поездок")} →</span></a>'
 index = head('Все путешествия — iamzet.travels', f'Путевой журнал Александра Захарова: {len(T)} поездок с {minY} года — путевые заметки, видеоотчёты, карты маршрутов и фотоальбомы.', '') + f'''<body class="home">
 <div class="wrap">
-<header class="masthead mh-home">
-  <h1 class="brandh">На машине по России и не только</h1>
-  <div class="cnav"><button type="button" class="cprev" aria-label="Назад"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 4l-6 6 6 6"/></svg></button><button type="button" class="cnext" aria-label="Вперёд"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 4l6 6-6 6"/></svg></button></div>
-</header>
-<section class="latest" aria-label="Последние поездки"><div class="top">{AUTHOR}<div class="feats" tabindex="0">{latest_html}<div class="more"><span class="more-c"><a class="more-t" href="{"travels.html#t-" + _more["slug"] if _more else "travels.html"}">Ещё →</a></span></div></div></div></section>
+<h1 class="vh">iamzet.travels — на машине по России и не только</h1>
+<section class="latest" aria-label="Последние поездки"><div class="top">{AUTHOR}<div class="carousel"><div class="cnav"><button type="button" class="cprev" aria-label="Назад"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 4l-6 6 6 6"/></svg></button><button type="button" class="cnext" aria-label="Вперёд"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 4l6 6-6 6"/></svg></button></div><div class="feats" tabindex="0">{latest_html}<div class="more"><span class="more-c"><a class="more-t" href="{"travels.html#t-" + _more["slug"] if _more else "travels.html"}">Ещё →</a></span></div></div></div></div></section>
 <section class="worldmap" aria-label="Карта всех поездок"><div class="mapbox" id="worldmap"><span class="maploading">Загружаем карту…</span></div></section>
 <nav class="sections">{TRAVELS_LINK}{ARCH_LINK}</nav>
 {FOOT}
