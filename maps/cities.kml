@@ -486,7 +486,7 @@
         <Point><coordinates>18.771234,42.424662,0</coordinates></Point>
       </Placemark>
       <Placemark>
-        <name>Петра</name>
+        <name>Патры</name>
         <styleUrl>#city</styleUrl>
         <ExtendedData><Data name="Last visit"><value>2018</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2018-vokrug-adriaticheskogo-morya.html</value></Data></ExtendedData>
         <Point><coordinates>21.7345740000001,38.2466395,0</coordinates></Point>
