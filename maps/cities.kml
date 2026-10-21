@@ -170,7 +170,7 @@
       <Placemark>
         <name>Стамбул</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Last visit"><value>2016</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2016-vokrug-chernogo-morya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2023</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2023-stambul.html</value></Data></ExtendedData>
         <Point><coordinates>28.9783589,41.0082376,0</coordinates></Point>
       </Placemark>
       <Placemark>
