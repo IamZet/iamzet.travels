@@ -23,13 +23,13 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: pip install shapely
+      - run: pip install shapely pillow
       - run: python src/build.py
       - name: Commit generated pages
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A index.html archive.html trips assets
+          git add -A index.html archive.html trips assets src/city_info.json
           if git diff --cached --quiet; then echo "Nothing changed"; exit 0; fi
           git commit -m "Rebuild site"
           git push

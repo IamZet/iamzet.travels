@@ -120,45 +120,6 @@
           onEachFeature: function (f, l) { l.bindTooltip(esc(f.properties.n), { sticky: true, className: 'wm-tip' }); }
         }).addTo(map);
         var CN = window.__WM.cn || {}, flagBase = base + 'flags/';
-        function km(a1, o1, a2, o2) { var r = Math.PI / 180, x = (o2 - o1) * r * Math.cos((a1 + a2) / 2 * r), y = (a2 - a1) * r; return Math.sqrt(x * x + y * y) * 6371; }
-        var wcache = {};
-        function wiki(c) {
-          if (wcache[c.n]) return wcache[c.n];
-          var tries = [c.w || c.n, c.n + ' (город)', c.n];
-          function get(i) {
-            if (i >= tries.length) return Promise.resolve(null);
-            return fetch('https://ru.wikipedia.org/api/rest_v1/page/summary/' + encodeURIComponent(tries[i].replace(/ /g, '_')) + '?redirect=true')
-              .then(function (r) { return r.ok ? r.json() : null; })
-              .then(function (j) {
-                var ok = j && j.type !== 'disambiguation' && j.coordinates && km(c.la, c.lo, j.coordinates.lat, j.coordinates.lon) < 60;
-                return ok ? j : get(i + 1);
-              }, function () { return get(i + 1); });
-          }
-          wcache[c.n] = get(0).then(function (j) {
-            if (!j) return null;
-            var out = { img: j.thumbnail && j.thumbnail.source, url: j.content_urls && j.content_urls.desktop.page, site: '' };
-            if (!j.wikibase_item) return out;
-            return fetch('https://www.wikidata.org/w/api.php?action=wbgetclaims&entity=' + j.wikibase_item + '&property=P856&format=json&origin=*')
-              .then(function (r) { return r.json(); })
-              .then(function (w) { try { out.site = w.claims.P856[0].mainsnak.datavalue.value; } catch (e) {} return out; }, function () { return out; });
-          });
-          return wcache[c.n];
-        }
-        function puny(label) { // RFC 3492 decode, for xn-- labels
-          var base = 36, tMin = 1, tMax = 26, skew = 38, damp = 700, n = 128, i = 0, bias = 72, out = [], b = label.lastIndexOf('-');
-          for (var j = 0; j < (b > 0 ? b : 0); j++) out.push(label.charCodeAt(j));
-          function adapt(d, num, first) { var k = 0; d = first ? Math.floor(d / damp) : d >> 1; d += Math.floor(d / num); for (; d > ((base - tMin) * tMax) >> 1; k += base) d = Math.floor(d / (base - tMin)); return Math.floor(k + (base - tMin + 1) * d / (d + skew)); }
-          for (var idx = b > 0 ? b + 1 : 0; idx < label.length;) {
-            var oldi = i, w = 1;
-            for (var k = base; ; k += base) {
-              var c = label.charCodeAt(idx++), dg = c - 48 < 10 ? c - 22 : c - 65 < 26 ? c - 65 : c - 97 < 26 ? c - 97 : base;
-              i += dg * w; var t = k <= bias ? tMin : k >= bias + tMax ? tMax : k - bias;
-              if (dg < t) break; w *= base - t;
-            }
-            bias = adapt(i - oldi, out.length + 1, oldi === 0); n += Math.floor(i / (out.length + 1)); i %= out.length + 1; out.splice(i++, 0, n);
-          }
-          return String.fromCodePoint.apply(null, out);
-        }
         function host(u) {
           try {
             return new URL(u).hostname.replace(/^www\./, '').split('.').map(function (l) { try { return /^xn--/i.test(l) ? puny(l.slice(4).toLowerCase()) : l; } catch (e) { return l; } }).join('.');
@@ -186,7 +147,7 @@
           m.on('popupopen', function (ev) {
             var el = ev.popup.getElement().querySelector('.wm-pop');
             if (el.getAttribute('data-f')) return; el.setAttribute('data-f', '1');
-            wiki(c).then(function (w) { fill(el, w); });
+            if (c.wi) fill(el, { img: c.wi.img ? base + 'cities/' + c.wi.img : '', url: c.wi.url, site: c.wi.site });
           });
           m.on('popupclose', function (ev) { ev.popup.setContent(card(c)); });
           m.bindTooltip(esc(c.n), { direction: 'top', offset: [0, -6], className: 'wm-tip' });

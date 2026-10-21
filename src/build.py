@@ -473,6 +473,63 @@ WIKI = {'Санкт Петербург': 'Санкт-Петербург', 'Ро�
 for _o in _pts.values():
     _o['c'] = _country(_o)
     if WIKI.get(_o['n']): _o['w'] = WIKI[_o['n']]
+# City cards: Wikipedia photo/link + official site, cached in src/city_info.json and assets/cities/.
+# Every build tries to refresh the cache (CI has internet); offline builds just reuse it.
+import urllib.request, urllib.parse, math, io, hashlib as _hh
+_CI_PATH = os.path.join(S, 'city_info.json')
+_CI = json.load(open(_CI_PATH, encoding='utf-8')) if os.path.exists(_CI_PATH) else {}
+_UA = {'User-Agent': 'iamzet.travels site builder (https://iamzet.ru; alex.m.zakharov@gmail.com)'}
+def _get(url, raw=False):
+    with urllib.request.urlopen(urllib.request.Request(url, headers=_UA), timeout=15) as r:
+        b = r.read()
+    return b if raw else json.loads(b.decode('utf-8'))
+def _km(a1, o1, a2, o2):
+    r = math.pi / 180; x = (o2 - o1) * r * math.cos((a1 + a2) / 2 * r); y = (a2 - a1) * r
+    return math.hypot(x, y) * 6371
+def _wiki(o):
+    for title in dict.fromkeys([o.get('w') or o['n'], o['n'] + ' (город)', o['n']]):
+        try:
+            j = _get('https://ru.wikipedia.org/api/rest_v1/page/summary/' + urllib.parse.quote(title.replace(' ', '_')) + '?redirect=true')
+        except Exception:
+            continue
+        c = j.get('coordinates')
+        if j.get('type') == 'disambiguation' or not c or _km(o['la'], o['lo'], c['lat'], c['lon']) > 60: continue
+        out = {'url': j.get('content_urls', {}).get('desktop', {}).get('page', ''), 'site': '', 'img_src': (j.get('thumbnail') or {}).get('source', '')}
+        if j.get('wikibase_item'):
+            try:
+                w = _get('https://www.wikidata.org/w/api.php?action=wbgetclaims&format=json&property=P856&entity=' + j['wikibase_item'])
+                out['site'] = w['claims']['P856'][0]['mainsnak']['datavalue']['value']
+            except Exception: pass
+        return out
+    return {'url': '', 'site': '', 'img_src': ''}
+_online = True
+try: _get('https://ru.wikipedia.org/api/rest_v1/page/summary/Владимир_(город)')
+except Exception: _online = False
+os.makedirs(os.path.join(OUT, 'assets', 'cities'), exist_ok=True)
+for _o in _pts.values():
+    _key = f"{_o['n']}|{_o['la']}|{_o['lo']}"
+    _info = _CI.get(_key)
+    if _online:
+        try:
+            _new = _wiki(_o)
+            if _new.get('img_src'):
+                _fn = _hh.sha1(_key.encode()).hexdigest()[:12] + '.webp'
+                if not (_info and _info.get('img_src') == _new['img_src'] and os.path.exists(os.path.join(OUT, 'assets', 'cities', _fn))):
+                    from PIL import Image as _Img
+                    _im = _Img.open(io.BytesIO(_get(_new['img_src'], raw=True))).convert('RGB')
+                    _w, _h = _im.size; _r = max(520 / _w, 292 / _h)
+                    _im = _im.resize((max(1, round(_w * _r)), max(1, round(_h * _r))), _Img.LANCZOS)
+                    _l, _t = (_im.width - 520) // 2, (_im.height - 292) // 2
+                    _im.crop((_l, _t, _l + 520, _t + 292)).save(os.path.join(OUT, 'assets', 'cities', _fn), 'WEBP', quality=72)
+                _new['img'] = _fn
+            _info = _new
+        except Exception as _ex:
+            print('city info failed', _o['n'], _ex)
+    if _info:
+        _CI[_key] = _info
+        _o['wi'] = {k: _info.get(k, '') for k in ('img', 'url', 'site') if _info.get(k)}
+json.dump(dict(sorted(_CI.items())), open(_CI_PATH, 'w', encoding='utf-8'), ensure_ascii=False, indent=0)
+print('cities', len(_pts), 'with info', sum(1 for o in _pts.values() if o.get('wi')), 'online' if _online else 'offline (cache)')
 for _c in {o['c'] for o in _pts.values() if o['c']}:
     shutil.copy(os.path.join(S, 'flags', _c + '.svg'), os.path.join(OUT, 'assets', 'flags', _c + '.svg'))
 _cn_used = {o['c']: CNAME.get(o['c'], o['c']) for o in _pts.values() if o['c']}
