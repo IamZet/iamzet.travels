@@ -132,7 +132,26 @@
           });
           return wcache[c.n];
         }
-        function host(u) { try { return new URL(u).hostname.replace(/^www\./, ''); } catch (e) { return u; } }
+        function puny(label) { // RFC 3492 decode, for xn-- labels
+          var base = 36, tMin = 1, tMax = 26, skew = 38, damp = 700, n = 128, i = 0, bias = 72, out = [], b = label.lastIndexOf('-');
+          for (var j = 0; j < (b > 0 ? b : 0); j++) out.push(label.charCodeAt(j));
+          function adapt(d, num, first) { var k = 0; d = first ? Math.floor(d / damp) : d >> 1; d += Math.floor(d / num); for (; d > ((base - tMin) * tMax) >> 1; k += base) d = Math.floor(d / (base - tMin)); return Math.floor(k + (base - tMin + 1) * d / (d + skew)); }
+          for (var idx = b > 0 ? b + 1 : 0; idx < label.length;) {
+            var oldi = i, w = 1;
+            for (var k = base; ; k += base) {
+              var c = label.charCodeAt(idx++), dg = c - 48 < 10 ? c - 22 : c - 65 < 26 ? c - 65 : c - 97 < 26 ? c - 97 : base;
+              i += dg * w; var t = k <= bias ? tMin : k >= bias + tMax ? tMax : k - bias;
+              if (dg < t) break; w *= base - t;
+            }
+            bias = adapt(i - oldi, out.length + 1, oldi === 0); n += Math.floor(i / (out.length + 1)); i %= out.length + 1; out.splice(i++, 0, n);
+          }
+          return String.fromCodePoint.apply(null, out);
+        }
+        function host(u) {
+          try {
+            return new URL(u).hostname.replace(/^www\./, '').split('.').map(function (l) { try { return /^xn--/i.test(l) ? puny(l.slice(4).toLowerCase()) : l; } catch (e) { return l; } }).join('.');
+          } catch (e) { return u; }
+        }
         function card(c) {
           var h = '<div class="wm-pop"><div class="wm-img"></div><div class="wm-body"><b>' + esc(c.n) + '</b>';
           h += '<div class="wm-meta">' + (c.c ? '<span class="wm-c"><img src="' + flagBase + c.c + '.svg" alt="" width="16" height="12">' + esc(CN[c.c] || '') + '</span>' : '') + '</div>';
