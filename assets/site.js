@@ -104,12 +104,54 @@
           style: { color: acc, weight: 1, opacity: .55, fillColor: acc, fillOpacity: dark ? .18 : .12 },
           onEachFeature: function (f, l) { l.bindTooltip(esc(f.properties.n), { sticky: true, className: 'wm-tip' }); }
         }).addTo(map);
+        var CN = window.__WM.cn || {}, flagBase = base + 'flags/';
+        function km(a1, o1, a2, o2) { var r = Math.PI / 180, x = (o2 - o1) * r * Math.cos((a1 + a2) / 2 * r), y = (a2 - a1) * r; return Math.sqrt(x * x + y * y) * 6371; }
+        var wcache = {};
+        function wiki(c) {
+          if (wcache[c.n]) return wcache[c.n];
+          var tries = [c.w || c.n, c.n + ' (город)'];
+          function get(i) {
+            if (i >= tries.length) return Promise.resolve(null);
+            return fetch('https://ru.wikipedia.org/api/rest_v1/page/summary/' + encodeURIComponent(tries[i].replace(/ /g, '_')) + '?redirect=true')
+              .then(function (r) { return r.ok ? r.json() : null; })
+              .then(function (j) {
+                var ok = j && j.type !== 'disambiguation' && (!j.coordinates || km(c.la, c.lo, j.coordinates.lat, j.coordinates.lon) < 60);
+                return ok ? j : get(i + 1);
+              }, function () { return get(i + 1); });
+          }
+          wcache[c.n] = get(0).then(function (j) {
+            if (!j) return null;
+            var out = { img: j.thumbnail && j.thumbnail.source, ex: j.extract || '', url: j.content_urls && j.content_urls.desktop.page, site: '' };
+            if (!j.wikibase_item) return out;
+            return fetch('https://www.wikidata.org/w/api.php?action=wbgetclaims&entity=' + j.wikibase_item + '&property=P856&format=json&origin=*')
+              .then(function (r) { return r.json(); })
+              .then(function (w) { try { out.site = w.claims.P856[0].mainsnak.datavalue.value; } catch (e) {} return out; }, function () { return out; });
+          });
+          return wcache[c.n];
+        }
+        function host(u) { try { return new URL(u).hostname.replace(/^www\./, ''); } catch (e) { return u; } }
+        function card(c, w) {
+          var h = '<div class="wm-pop">';
+          if (w && w.img) h += '<div class="wm-img"><img src="' + esc(w.img) + '" alt=""></div>';
+          h += '<div class="wm-body"><b>' + esc(c.n) + '</b>';
+          var meta = [];
+          if (c.c) meta.push('<span class="wm-c"><img src="' + flagBase + c.c + '.svg" alt="" width="16" height="12">' + esc(CN[c.c] || '') + '</span>');
+          if (c.y) meta.push('<span class="wm-y">' + esc(c.y) + '</span>');
+          if (meta.length) h += '<div class="wm-meta">' + meta.join('') + '</div>';
+          if (w && w.ex) h += '<p class="wm-ex">' + esc(w.ex) + '</p>';
+          if (c.s) h += '<a class="wm-trip" href="trips/' + esc(c.s) + '.html" target="_blank" rel="noopener">' + esc(c.t) + ' →</a>';
+          var ext = [];
+          if (w && w.site) ext.push('<a href="' + esc(w.site) + '" target="_blank" rel="noopener">' + esc(host(w.site)) + '</a>');
+          if (w && w.url) ext.push('<a href="' + esc(w.url) + '" target="_blank" rel="noopener">Википедия</a>');
+          if (ext.length) h += '<div class="wm-ext">' + ext.join('<span>·</span>') + '</div>';
+          return h + '</div></div>';
+        }
         var pts = d[1].map(function (c) {
-          var linked = !!c.s;
           var m = L.circleMarker([c.la, c.lo], { radius: 6, weight: 1.5, color: surf, fillColor: acc, fillOpacity: 1 });
-          var h = '<div class="wm-pop"><b>' + esc(c.n) + '</b>' + (c.y ? '<span class="wm-y">' + esc(c.y) + '</span>' : '') +
-            (linked ? '<a href="trips/' + esc(c.s) + '.html" target="_blank" rel="noopener">' + esc(c.t) + ' →</a>' : '') + '</div>';
-          m.bindPopup(h, { closeButton: false, className: 'wm-popup', offset: [0, -2] });
+          m.bindPopup(card(c, null), { closeButton: false, className: 'wm-popup', offset: [0, -2], maxWidth: 280, minWidth: 260, autoPanPadding: [16, 16] });
+          m.on('popupopen', function () {
+            wiki(c).then(function (w) { if (w && m.isPopupOpen()) { m.setPopupContent(card(c, w)); var im = m.getPopup().getElement().querySelector('.wm-img img'); if (im) im.onload = function () { m.getPopup().update(); }; } });
+          });
           m.bindTooltip(esc(c.n), { direction: 'top', offset: [0, -6], className: 'wm-tip' });
           return m;
         });
