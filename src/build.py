@@ -332,7 +332,7 @@ def video_block(t):
               + f'<button type="button" data-src="dzen" aria-pressed="true"{"" if anydz else " disabled title='Этих видео пока нет на Дзене'"}>{LOGO_DZ}<span>Дзен</span></button>'
               + f'<button type="button" data-src="yt" aria-pressed="false">{LOGO_YT}<span>YouTube</span></button></div>')
     cls = 'vids one' if len(items) == 1 else 'vids'
-    pl = f'<p class="mapnote"><a href="{e(t["vplaylist"])}" target="_blank" rel="noopener">Плейлист на YouTube {ICO["out"]}</a></p>' if t.get('vplaylist') else ''
+    pl = ''
     return f'{sw}<div class="{cls}">{"".join(items)}</div>{pl}'
 
 def trip_page(t, prev, nxt):
@@ -392,9 +392,8 @@ def trip_page(t, prev, nxt):
 <div class="topbar"><div class="wrap"><a href="../{'archive.html' if t['y'] < ARCH_Y else 'travels.html'}" class="back">← {'Архив' if t['y'] < ARCH_Y else 'Путешествия'}</a><span class="brand">iamzet.travels</span></div></div>
 <div class="wrap">
 <header class="thead">
-  <div class="twhen"><i class="s-{t['s']}"></i>{e(t['wfull'])}</div>
+  <div class="twhen"><i class="s-{t['s']}"></i>{e(t['wfull'])}{flag_html(t, '../')}</div>
   <h1>{e(t['n'])}</h1>
-  {flag_html(t, '../')}
 </header>
 </div>
 <div class="tabwrap"><div class="wrap">{tabbar}</div></div>

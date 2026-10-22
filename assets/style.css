@@ -223,8 +223,7 @@ a.tname:hover{color:var(--accent);text-decoration:underline;text-underline-offse
   .year h2 small{display:inline;margin-left:10px}
   .trip{grid-template-columns:104px minmax(0,1fr);align-items:start}
   .links{grid-column:2;justify-content:flex-start}
-  .vids:not(.one){grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:84%;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px}
-  .vids:not(.one) > *{scroll-snap-align:start;grid-column:auto!important}
+  .vids{grid-template-columns:minmax(0,1fr)}
   .prose{font-size:17.5px}
   .prevnext{grid-template-columns:minmax(0,1fr)}
   .pn.newer{text-align:left}
@@ -275,8 +274,8 @@ body.lb-open{overflow:hidden}
 /* ---------- country flags ---------- */
 .flags{display:flex;flex-wrap:wrap;gap:4px;align-items:center}
 .flags img{display:block;width:20px;height:15px;border-radius:2px;box-shadow:0 0 0 1px var(--line);object-fit:cover}
-.thead .flags{gap:6px}
-.thead .flags img{width:28px;height:21px;border-radius:3px}
+.thead .flags{gap:5px;margin-left:6px}
+.thead .flags img{width:22px;height:16px;border-radius:2px}
 .tbody .flags{margin-top:4px}
 
 /* ---------- local videos ---------- */
