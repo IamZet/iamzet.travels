@@ -223,17 +223,17 @@ AU_LINKS = ''.join(('<a href="%s" title="%s" aria-label="%s">%s</a>' if u.starts
 YT_AVATAR = 'https://yt3.googleusercontent.com/VCV5s0xMYvfGBBXp79TL5JZM0dhkc3p_IdxonkBYF7Lofq0zzr30_OuFVT5qtI9wx7KWGdDy=s176-c-k-c0x00ffffff-no-rj'
 _av = f'<img src="assets/{_me}" alt="" width="128" height="128">' if _me else f'<img src="{YT_AVATAR}" alt="" width="64" height="64" referrerpolicy="no-referrer" onerror="this.remove()"><span>АЗ</span>'
 AUTHOR = f'''<aside class="author" aria-label="Об авторе"><div class="av">{_av}</div><div class="au-b"><div class="au-n">Александр Захаров</div><div class="au-d">На машине по России и не только</div>
-<a class="au-go" href="travels.html">Путешествия →</a><div class="au-l">{AU_LINKS}</div></div></aside>'''
+<a class="au-go" href="travels">Путешествия →</a><div class="au-l">{AU_LINKS}</div></div></aside>'''
 EMPTY = '<p class="empty" id="empty" hidden>Ничего не нашлось. Попробуйте другое название или снимите фильтры.</p>'
 SOCIAL = ' · '.join(f'<a href="{u}" target="_blank" rel="noopener">{n}</a>' for n, u in (('YouTube', 'https://www.youtube.com/@alex.zakharov'), ('Telegram', 'https://t.me/iamzet'), ('Дзен', 'https://dzen.ru/alexzakharov'))) + ' · <a href="mailto:alex.m.zakharov@gmail.com">alex.m.zakharov@gmail.com</a>'
 FOOT = f'<footer class="foot">© {maxY} Александр Захаров · {SOCIAL}</footer>'
 
-TRAVELS_LINK = f'<a class="archlink" href="travels.html"><span class="al-k">Путешествия</span><span class="al-t">{ARCH_Y}–{maxY}</span><span class="al-n">→</span></a>'
-ARCH_LINK = f'<a class="archlink" href="archive.html"><span class="al-k">Архив</span><span class="al-t">{min(archY)}–{max(archY)}</span><span class="al-n">→</span></a>'
+TRAVELS_LINK = f'<a class="archlink" href="travels"><span class="al-k">Путешествия</span><span class="al-t">{ARCH_Y}–{maxY}</span><span class="al-n">→</span></a>'
+ARCH_LINK = f'<a class="archlink" href="archive"><span class="al-k">Архив</span><span class="al-t">{min(archY)}–{max(archY)}</span><span class="al-n">→</span></a>'
 index = head('Все путешествия — iamzet.travels', f'Путевой журнал Александра Захарова: {len(T)} поездок с {minY} года — путевые заметки, видеоотчёты, карты маршрутов и фотоальбомы.', '') + f'''<body class="home">
 <div class="wrap">
 <h1 class="vh">iamzet.travels — на машине по России и не только</h1>
-<section class="latest" aria-label="Последние поездки"><div class="top">{AUTHOR}<div class="carousel"><div class="cnav"><button type="button" class="cprev" aria-label="Назад"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 4l-6 6 6 6"/></svg></button><button type="button" class="cnext" aria-label="Вперёд"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 4l6 6-6 6"/></svg></button></div><div class="feats" tabindex="0">{latest_html}<div class="more"><span class="more-c"><a class="more-t au-go" href="{"travels.html#t-" + _more["slug"] if _more else "travels.html"}">Ещё →</a></span></div></div></div></div></section>
+<section class="latest" aria-label="Последние поездки"><div class="top">{AUTHOR}<div class="carousel"><div class="cnav"><button type="button" class="cprev" aria-label="Назад"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 4l-6 6 6 6"/></svg></button><button type="button" class="cnext" aria-label="Вперёд"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 4l6 6-6 6"/></svg></button></div><div class="feats" tabindex="0">{latest_html}<div class="more"><span class="more-c"><a class="more-t au-go" href="{"travels#t-" + _more["slug"] if _more else "travels"}">Ещё →</a></span></div></div></div></div></section>
 <section class="worldmap" aria-label="Карта всех поездок"><div class="mapbox" id="worldmap"><span class="maploading">Загружаем карту…</span></div></section>
 </div>
 <script src="assets/site.js?v={VER}" defer></script>
@@ -241,7 +241,7 @@ index = head('Все путешествия — iamzet.travels', f'Путево�
 </html>'''
 
 travels = head('Путешествия — iamzet.travels', f'Путешествия Александра Захарова с {ARCH_Y} года: {nRecent} поездок — путевые заметки, видеоотчёты, карты маршрутов и фотоальбомы.', '') + f'''<body class="home arch">
-<div class="topbar"><div class="wrap"><a href="index.html" class="back">← Главная</a><span class="brand">iamzet.travels</span></div></div>
+<div class="topbar"><div class="wrap"><a href="./" class="back">← Главная</a><span class="brand">iamzet.travels</span></div></div>
 <div class="wrap">
 <header class="masthead"><h1 class="brandh">Путешествия</h1><p class="archsub">{ARCH_Y}–{maxY}</p></header>
 {tools(nRecent)}
@@ -385,7 +385,7 @@ def trip_page(t, prev, nxt):
     desc = f"{t['n']}, {t['wfull'].lower()}: " + ', '.join(parts) + '.'
     og = f'<meta property="og:image" content="https://i.ytimg.com/vi/{t["thumb"]}/hqdefault.jpg">' if t['thumb'] else ''
     return head(f"{t['n']} · {t['ylab']} — iamzet.travels", desc, '../', og) + f'''<body class="tripp">
-<div class="topbar"><div class="wrap"><a href="../{'archive.html' if t['y'] < ARCH_Y else 'travels.html'}" class="back">← {'Архив' if t['y'] < ARCH_Y else 'Путешествия'}</a><span class="brand">iamzet.travels</span></div></div>
+<div class="topbar"><div class="wrap"><a href="../{'archive' if t['y'] < ARCH_Y else 'travels'}" class="back">← {'Архив' if t['y'] < ARCH_Y else 'Путешествия'}</a><span class="brand">iamzet.travels</span></div></div>
 <div class="wrap">
 <header class="thead">
   <div class="twhen"><i class="s-{t['s']}"></i>{e(t['wfull'])}{flag_html(t, '../')}</div>
@@ -396,7 +396,7 @@ def trip_page(t, prev, nxt):
 <div class="wrap">
 {panelhtml}
 <nav class="prevnext" aria-label="Соседние поездки">{nav(nxt, '← Раньше', 'older')}{nav(prev, 'Позже →', 'newer')}</nav>
-<footer class="foot">© {maxY} Александр Захаров · <a href="../index.html">Главная</a> · <a href="../{'archive.html' if t['y'] < ARCH_Y else 'travels.html'}">{'Архив' if t['y'] < ARCH_Y else 'Путешествия'}</a> · {SOCIAL}</footer>
+<footer class="foot">© {maxY} Александр Захаров · <a href="../">Главная</a> · <a href="../{'archive' if t['y'] < ARCH_Y else 'travels'}">{'Архив' if t['y'] < ARCH_Y else 'Путешествия'}</a> · {SOCIAL}</footer>
 </div>
 <script src="../assets/site.js?v={VER}" defer></script>
 </body>
@@ -409,7 +409,7 @@ os.makedirs(os.path.join(OUT, 'trips'), exist_ok=True); os.makedirs(os.path.join
 open(os.path.join(OUT, 'index.html'), 'w', encoding='utf-8').write(index)
 open(os.path.join(OUT, 'travels.html'), 'w', encoding='utf-8').write(travels)
 archive = head('Архив — iamzet.travels', f'Архив путевого журнала Александра Захарова: {nArch} поездок {min(archY)}–{max(archY)} годов.', '') + f'''<body class="home arch">
-<div class="topbar"><div class="wrap"><a href="index.html" class="back">← Главная</a><span class="brand">iamzet.travels</span></div></div>
+<div class="topbar"><div class="wrap"><a href="./" class="back">← Главная</a><span class="brand">iamzet.travels</span></div></div>
 <div class="wrap">
 <header class="masthead"><h1 class="brandh">Архив</h1><p class="archsub">{min(archY)}–{max(archY)}</p></header>
 {tools(nArch)}

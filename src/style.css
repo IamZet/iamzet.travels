@@ -371,3 +371,4 @@ body.home:not(.arch) .worldmap{margin:0 0 18px}
 .top .more-c{aspect-ratio:16/9}
 .leaflet-tooltip.wm-label{background:transparent;border:0;box-shadow:none;padding:0 2px;font-size:var(--wm-lbl,12px);font-weight:600;color:var(--fg);text-shadow:0 0 3px var(--bg),0 0 3px var(--bg),0 0 2px var(--bg)}
 .leaflet-tooltip.wm-label:before{display:none}
+.leaflet-tooltip.wm-label{cursor:pointer}

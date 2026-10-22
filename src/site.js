@@ -1,4 +1,12 @@
 (function () {
+  // Pretty URLs (/, /travels, /archive) are served by GitHub Pages; when the site is opened from disk, point links at the .html files
+  if (location.protocol === 'file:') {
+    document.querySelectorAll('a[href]').forEach(function (a) {
+      var h = a.getAttribute('href'), m;
+      if (h === './' || h === '../') a.setAttribute('href', h + 'index.html');
+      else if ((m = h.match(/^((?:\.\.\/)?)(travels|archive)(#.*)?$/))) a.setAttribute('href', m[1] + m[2] + '.html' + (m[3] || ''));
+    });
+  }
   // Index: search + filters
   var q = document.getElementById('q');
   if (q) {
@@ -162,6 +170,15 @@
           m._wmName = esc(c.n);
           return m;
         });
+        // Bigger invisible click targets around the dots (the dots themselves are small)
+        var hits = pts.map(function (m) {
+          var h = L.circleMarker(m.getLatLng(), { radius: 14, stroke: false, fill: true, fillColor: '#000', fillOpacity: 0, bubblingMouseEvents: false });
+          h.on('click', function () { m.openPopup(); });
+          h.on('mouseover', function () { if (!m.getTooltip() || !m.getTooltip().options.permanent) m.openTooltip(); });
+          h.on('mouseout', function () { if (m.getTooltip() && !m.getTooltip().options.permanent) m.closeTooltip(); });
+          return h;
+        });
+        L.featureGroup(hits).addTo(map);
         var cities = L.featureGroup(pts).addTo(map);
         // City names: hover tooltips when zoomed out, permanent labels from zoom 6
         var LABEL_ZOOM = 6, labelsOn = null;
@@ -169,13 +186,14 @@
           var z = map.getZoom();
           var r = Math.max(6, Math.min(11, 6 + (z - 4) * 1.25));   // dots grow from zoom 4
           pts.forEach(function (m) { m.setRadius(r); });
+          hits.forEach(function (h) { h.setRadius(r + 8); });
           box.style.setProperty('--wm-lbl', Math.max(12, Math.min(17, 12 + (z - LABEL_ZOOM) * 1.25)) + 'px');
           var on = z >= LABEL_ZOOM;
           var key = on + ':' + Math.round(r);
           if (key === labelsOn) return; labelsOn = key;
           pts.forEach(function (m) {
             m.unbindTooltip();
-            m.bindTooltip(m._wmName, on ? { permanent: true, direction: 'right', offset: [Math.round(r) + 2, 0], className: 'wm-label' }
+            m.bindTooltip(m._wmName, on ? { permanent: true, interactive: true, direction: 'right', offset: [Math.round(r) + 2, 0], className: 'wm-label' }
                                         : { direction: 'top', offset: [0, -6], className: 'wm-tip' });
           });
         }
