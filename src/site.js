@@ -147,7 +147,11 @@
             if (el.getAttribute('data-f')) return; el.setAttribute('data-f', '1');
             if (c.wi) fill(el, { img: c.wi.img ? base + 'cities/' + c.wi.img : '', url: c.wi.url, site: c.wi.site });
           });
-          m.on('popupclose', function (ev) { ev.popup.setContent(card(c)); });
+          m.on('popupclose', function (ev) {
+            ev.popup.setContent(card(c));
+            // Leaflet hides a marker's permanent label while its popup is open; bring it back
+            setTimeout(function () { var t = m.getTooltip(); if (t && t.options.permanent && !m.isTooltipOpen()) { m.openTooltip(); schedulePlace(); } }, 0);
+          });
           m._wmName = esc(c.n);
           return m;
         });
