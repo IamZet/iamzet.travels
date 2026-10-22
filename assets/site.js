@@ -102,7 +102,7 @@
       var base = (document.querySelector('link[href*="assets/style.css"]').getAttribute('href') || '').replace(/style\.css.*$/, '');
       var ver = (document.querySelector('script[src*="site.js"]').src.split('v=')[1] || '');
       function need(name, file) { return new Promise(function (ok, no) { if (window[name]) return ok(); loadJs(base + file + '?v=' + ver, function (e) { e ? no(e) : ok(); }); }); }
-      Promise.all([need('__WM', 'map-data.js'), need('__WW', 'map-world.js')]).then(function () {
+      need('__WM', 'map-data.js').then(function () {
         var d = [window.__WM.k, window.__WM.c];
         box.innerHTML = '';
         var dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -111,8 +111,10 @@
         map.on('blur', function () { map.scrollWheelZoom.disable(); });
         var acc = css('--accent'), surf = css('--surface');
         map.createPane('land'); map.getPane('land').style.zIndex = 250;
-        L.geoJSON(window.__WW.land, { pane: 'land', interactive: false, style: { stroke: false, fillColor: css('--map-land'), fillOpacity: 1 } }).addTo(map);
-        L.geoJSON(window.__WW.borders, { pane: 'land', interactive: false, style: { color: css('--map-border'), weight: .7, opacity: 1, fill: false } }).addTo(map);
+        need('__WW', 'map-world.js').then(function () {  // land/borders arrive later; points and countries show first
+          L.geoJSON(window.__WW.land, { pane: 'land', interactive: false, style: { stroke: false, fillColor: css('--map-land'), fillOpacity: 1 } }).addTo(map);
+          L.geoJSON(window.__WW.borders, { pane: 'land', interactive: false, style: { color: css('--map-border'), weight: .7, opacity: 1, fill: false } }).addTo(map);
+        }, function () {});
         map.createPane('labels'); map.getPane('labels').style.zIndex = 350; map.getPane('labels').style.pointerEvents = 'none';
         L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_' + (dark ? 'Dark' : 'Light') + '_Gray_Reference/MapServer/tile/{z}/{y}/{x}', { maxZoom: 16, pane: 'labels', attribution: 'Natural Earth · Labels &copy; Esri' }).addTo(map);
         var countries = L.geoJSON(d[0], {
