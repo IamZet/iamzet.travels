@@ -443,6 +443,7 @@ for c in {c for v in CN.values() for c in v}:
 if _me: shutil.copy(os.path.join(S, _me), os.path.join(OUT, 'assets', _me))
 shutil.copy(os.path.join(S, 'style.css'), os.path.join(OUT, 'assets', 'style.css'))
 shutil.copy(os.path.join(S, 'site.js'), os.path.join(OUT, 'assets', 'site.js'))
+shutil.copytree(os.path.join(S, 'vendor'), os.path.join(OUT, 'assets', 'vendor'), dirs_exist_ok=True)
 # World map data (from maps/cities.kml + simplified countries)
 import xml.etree.ElementTree as _ET
 _K = '{http://www.opengis.net/kml/2.2}'

@@ -92,7 +92,7 @@
   var wm = document.querySelector('.worldmap');
   if (wm) {
     var wmDone = false;
-    var LV = '1.9.4', CDN = 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/' + LV + '/';
+    var CDN = ((document.querySelector('link[href*="assets/style.css"]') || {}).getAttribute ? document.querySelector('link[href*="assets/style.css"]').getAttribute('href').replace(/style\.css.*$/, '') : 'assets/') + 'vendor/leaflet/';  // Leaflet 1.9.4, self-hosted (no CDN)
     function loadCss(h) { var l = document.createElement('link'); l.rel = 'stylesheet'; l.href = h; document.head.appendChild(l); }
     function loadJs(src, cb) { var sc = document.createElement('script'); sc.src = src; sc.onload = function () { cb(); }; sc.onerror = function () { cb(new Error('load')); }; document.head.appendChild(sc); }
     function css(v) { return getComputedStyle(document.documentElement).getPropertyValue(v).trim(); }
@@ -160,8 +160,8 @@
     function start() {
       if (wmDone) return; wmDone = true;
       if (window.L) return build();
-      loadCss(CDN + 'leaflet.min.css');
-      loadJs(CDN + 'leaflet.min.js', function (err) { if (err) { document.getElementById('worldmap').innerHTML = '<span class="maploading">Не удалось загрузить карту</span>'; return; } build(); });
+      loadCss(CDN + 'leaflet.css');
+      loadJs(CDN + 'leaflet.js', function (err) { if (err) { document.getElementById('worldmap').innerHTML = '<span class="maploading">Не удалось загрузить карту</span>'; return; } build(); });
     }
     if ('IntersectionObserver' in window) {
       var wio = new IntersectionObserver(function (es) { if (es.some(function (e) { return e.isIntersecting; })) { wio.disconnect(); start(); } }, { rootMargin: '300px' });
