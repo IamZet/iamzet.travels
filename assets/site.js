@@ -156,11 +156,16 @@
         // City names: hover tooltips when zoomed out, permanent labels from zoom 6
         var LABEL_ZOOM = 6, labelsOn = null;
         function setLabels() {
-          var on = map.getZoom() >= LABEL_ZOOM;
-          if (on === labelsOn) return; labelsOn = on;
+          var z = map.getZoom();
+          var r = Math.max(6, Math.min(11, 6 + (z - 4) * 1.25));   // dots grow from zoom 4
+          pts.forEach(function (m) { m.setRadius(r); });
+          box.style.setProperty('--wm-lbl', Math.max(12, Math.min(17, 12 + (z - LABEL_ZOOM) * 1.25)) + 'px');
+          var on = z >= LABEL_ZOOM;
+          var key = on + ':' + Math.round(r);
+          if (key === labelsOn) return; labelsOn = key;
           pts.forEach(function (m) {
             m.unbindTooltip();
-            m.bindTooltip(m._wmName, on ? { permanent: true, direction: 'right', offset: [7, 0], className: 'wm-label' }
+            m.bindTooltip(m._wmName, on ? { permanent: true, direction: 'right', offset: [Math.round(r) + 2, 0], className: 'wm-label' }
                                         : { direction: 'top', offset: [0, -6], className: 'wm-tip' });
           });
         }
