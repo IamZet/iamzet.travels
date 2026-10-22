@@ -201,7 +201,7 @@ def year_sections(ys, root=''):
     out = []
     for y in ys:
         ts = [t for t in T if t['y'] == y]
-        out.append(f'''<section class="year" id="y{y}"><h2>{y}<small>{len(ts)} {plural(len(ts), 'поездка', 'поездки', 'поездок')}</small></h2>
+        out.append(f'''<section class="year" id="y{y}"><h2>{y}</h2>
 <ul class="trips">{''.join(row(t) for t in ts)}</ul></section>''')
     return out
 recentY = [y for y in years if y >= ARCH_Y]; archY = [y for y in years if y < ARCH_Y]
@@ -210,10 +210,6 @@ sections = year_sections(recentY)
 def tools(n):
     return f'''<div class="tools" role="search">
   <input id="q" type="search" placeholder="Поиск: Танзания, Крым, Петербург…" aria-label="Поиск по названию">
-  <button class="chip" type="button" data-k="v" aria-pressed="false">С видео</button>
-  <button class="chip" type="button" data-k="t" aria-pressed="false">С заметками</button>
-  <button class="chip" type="button" data-k="m" aria-pressed="false">С картой</button>
-  <span class="count" id="count">{n} из {n}</span>
 </div>'''
 _me = next((f for f in ('me.webp', 'me.jpg', 'me.png') if os.path.exists(os.path.join(S, f))), None)
 _svg = lambda d: f'<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{d}</svg>'
@@ -232,8 +228,8 @@ EMPTY = '<p class="empty" id="empty" hidden>Ничего не нашлось. П
 SOCIAL = ' · '.join(f'<a href="{u}" target="_blank" rel="noopener">{n}</a>' for n, u in (('YouTube', 'https://www.youtube.com/@alex.zakharov'), ('Telegram', 'https://t.me/iamzet'), ('Дзен', 'https://dzen.ru/alexzakharov'))) + ' · <a href="mailto:alex.m.zakharov@gmail.com">alex.m.zakharov@gmail.com</a>'
 FOOT = f'<footer class="foot">© {maxY} Александр Захаров · {SOCIAL}</footer>'
 
-TRAVELS_LINK = f'<a class="archlink" href="travels.html"><span class="al-k">Путешествия</span><span class="al-t">{ARCH_Y}–{maxY}</span><span class="al-n">{nRecent} {plural(nRecent, "поездка", "поездки", "поездок")} →</span></a>'
-ARCH_LINK = f'<a class="archlink" href="archive.html"><span class="al-k">Архив</span><span class="al-t">{min(archY)}–{max(archY)}</span><span class="al-n">{nArch} {plural(nArch, "поездка", "поездки", "поездок")} →</span></a>'
+TRAVELS_LINK = f'<a class="archlink" href="travels.html"><span class="al-k">Путешествия</span><span class="al-t">{ARCH_Y}–{maxY}</span><span class="al-n">→</span></a>'
+ARCH_LINK = f'<a class="archlink" href="archive.html"><span class="al-k">Архив</span><span class="al-t">{min(archY)}–{max(archY)}</span><span class="al-n">→</span></a>'
 index = head('Все путешествия — iamzet.travels', f'Путевой журнал Александра Захарова: {len(T)} поездок с {minY} года — путевые заметки, видеоотчёты, карты маршрутов и фотоальбомы.', '') + f'''<body class="home">
 <div class="wrap">
 <h1 class="vh">iamzet.travels — на машине по России и не только</h1>
@@ -247,7 +243,7 @@ index = head('Все путешествия — iamzet.travels', f'Путево�
 travels = head('Путешествия — iamzet.travels', f'Путешествия Александра Захарова с {ARCH_Y} года: {nRecent} поездок — путевые заметки, видеоотчёты, карты маршрутов и фотоальбомы.', '') + f'''<body class="home arch">
 <div class="topbar"><div class="wrap"><a href="index.html" class="back">← Главная</a><span class="brand">iamzet.travels</span></div></div>
 <div class="wrap">
-<header class="masthead"><h1 class="brandh">Путешествия</h1><p class="archsub">{ARCH_Y}–{maxY} · {nRecent} {plural(nRecent, 'поездка', 'поездки', 'поездок')}</p></header>
+<header class="masthead"><h1 class="brandh">Путешествия</h1><p class="archsub">{ARCH_Y}–{maxY}</p></header>
 {tools(nRecent)}
 <main id="list">{''.join(sections)}{EMPTY}</main>
 <nav class="sections">{ARCH_LINK}</nav>
@@ -415,7 +411,7 @@ open(os.path.join(OUT, 'travels.html'), 'w', encoding='utf-8').write(travels)
 archive = head('Архив — iamzet.travels', f'Архив путевого журнала Александра Захарова: {nArch} поездок {min(archY)}–{max(archY)} годов.', '') + f'''<body class="home arch">
 <div class="topbar"><div class="wrap"><a href="index.html" class="back">← Главная</a><span class="brand">iamzet.travels</span></div></div>
 <div class="wrap">
-<header class="masthead"><h1 class="brandh">Архив</h1><p class="archsub">{min(archY)}–{max(archY)} · {nArch} {plural(nArch, 'поездка', 'поездки', 'поездок')}</p></header>
+<header class="masthead"><h1 class="brandh">Архив</h1><p class="archsub">{min(archY)}–{max(archY)}</p></header>
 {tools(nArch)}
 <main id="list">{''.join(year_sections(archY))}{EMPTY}</main>
 <nav class="sections">{TRAVELS_LINK}</nav>

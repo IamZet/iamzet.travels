@@ -19,9 +19,8 @@
       years.forEach(function (y) {
         var n = y.querySelectorAll('.trip:not([hidden])').length;
         y.hidden = n === 0;
-        y.querySelector('small').textContent = n + ' ' + plural(n, 'поездка', 'поездки', 'поездок');
       });
-      count.textContent = shown + ' из ' + trips.length;
+      if (count) count.textContent = shown + ' из ' + trips.length;
       empty.hidden = shown > 0;
     }
     q.addEventListener('input', apply);
