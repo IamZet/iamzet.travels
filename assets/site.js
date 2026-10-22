@@ -115,8 +115,7 @@
           L.geoJSON(window.__WW.borders, { pane: 'land', interactive: false, style: { color: css('--map-border'), weight: .7, opacity: 1, fill: false } }).addTo(map);
         }, function () {});
         var countries = L.geoJSON(d[0], {
-          style: { color: acc, weight: 1, opacity: .55, fillColor: acc, fillOpacity: dark ? .28 : .2 },
-          onEachFeature: function (f, l) { l.bindTooltip(esc(f.properties.n), { sticky: true, className: 'wm-tip' }); }
+          style: { color: acc, weight: 1, opacity: .55, fillColor: acc, fillOpacity: dark ? .28 : .2 }, interactive: false
         }).addTo(map);
         var CN = window.__WM.cn || {}, flagBase = base + 'flags/';
         function host(u) {

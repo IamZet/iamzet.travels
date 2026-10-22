@@ -1451,6 +1451,12 @@
         <ExtendedData><Data name="Last visit"><value>2023</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2023-armeniya-i-zapadnaya-aziya.html</value></Data></ExtendedData>
         <Point><coordinates>32.4931554,37.8746429,0</coordinates></Point>
       </Placemark>
+      <Placemark>
+        <name>Гомель</name>
+        <styleUrl>#city</styleUrl>
+        <ExtendedData><Data name="Last visit"><value>2024</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2024-gomel.html</value></Data></ExtendedData>
+        <Point><coordinates>30.9754,52.4345,0</coordinates></Point>
+      </Placemark>
     </Folder>
   </Document>
 </kml>
