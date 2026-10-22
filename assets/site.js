@@ -203,8 +203,9 @@
         if (on && key === 'map') loadMap(p);
       });
       if (!found) return false;
-      if (scroll && tabwrap && tabwrap.getBoundingClientRect().top < 47) {
-        window.scrollTo(0, window.scrollY + tabwrap.getBoundingClientRect().top - 47);
+      var tt = tabwrap ? parseFloat(getComputedStyle(tabwrap).top) || 0 : 0;
+      if (scroll && tabwrap && tabwrap.getBoundingClientRect().top < tt) {
+        window.scrollTo(0, window.scrollY + tabwrap.getBoundingClientRect().top - tt);
       }
       return true;
     }

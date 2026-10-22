@@ -275,7 +275,7 @@ body.lb-open{overflow:hidden}
 /* ---------- country flags ---------- */
 .flags{display:flex;flex-wrap:wrap;gap:4px;align-items:center}
 .flags img{display:block;width:20px;height:15px;border-radius:2px;box-shadow:0 0 0 1px var(--line);object-fit:cover}
-.thead .flags{gap:5px;margin-left:6px}
+.thead .flags{gap:5px;margin-left:auto}
 .thead .flags img{width:22px;height:16px;border-radius:2px}
 .tbody .flags{margin-top:4px}
 
@@ -369,3 +369,4 @@ body.home:not(.arch) .sections{margin:0 0 18px}
 body.home:not(.arch) .worldmap{margin:0 0 18px}
 .au-go{display:inline-block;margin-top:10px;padding:7px 16px;border-radius:999px;background:var(--accent);color:var(--on-accent);text-decoration:none;font-weight:600;font-size:14px}
 .au-go:hover{filter:brightness(1.1)}
+@media (max-width:860px){.topbar{position:static}.tabwrap{top:0}}
