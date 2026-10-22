@@ -369,4 +369,3 @@ body.home:not(.arch) .sections{margin:0 0 18px}
 body.home:not(.arch) .worldmap{margin:0 0 18px}
 .au-go{display:inline-block;margin-top:10px;padding:7px 16px;border-radius:999px;background:var(--accent);color:var(--on-accent);text-decoration:none;font-weight:600;font-size:14px}
 .au-go:hover{filter:brightness(1.1)}
-@media (max-width:860px){.topbar{position:static}.tabwrap{position:static}}
