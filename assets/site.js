@@ -151,11 +151,24 @@
             if (c.wi) fill(el, { img: c.wi.img ? base + 'cities/' + c.wi.img : '', url: c.wi.url, site: c.wi.site });
           });
           m.on('popupclose', function (ev) { ev.popup.setContent(card(c)); });
-          m.bindTooltip(esc(c.n), { direction: 'top', offset: [0, -6], className: 'wm-tip' });
+          m._wmName = esc(c.n);
           return m;
         });
         var cities = L.featureGroup(pts).addTo(map);
+        // City names: hover tooltips when zoomed out, permanent labels from zoom 6
+        var LABEL_ZOOM = 6, labelsOn = null;
+        function setLabels() {
+          var on = map.getZoom() >= LABEL_ZOOM;
+          if (on === labelsOn) return; labelsOn = on;
+          pts.forEach(function (m) {
+            m.unbindTooltip();
+            m.bindTooltip(m._wmName, on ? { permanent: true, direction: 'right', offset: [7, 0], className: 'wm-label' }
+                                        : { direction: 'top', offset: [0, -6], className: 'wm-tip' });
+          });
+        }
+        map.on('zoomend', setLabels);
         map.fitBounds([[-8, -166], [78, 190]], { padding: [0, 0] });
+        setLabels();
       }).catch(function (er) { if (window.console) console.error(er); box.innerHTML = '<span class="maploading">Не удалось загрузить карту</span>'; });
     }
     function start() {

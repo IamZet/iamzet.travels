@@ -369,3 +369,5 @@ body.home:not(.arch) .worldmap{margin:0 0 18px}
 .au-go{display:inline-block;margin-top:10px;padding:7px 16px;border-radius:999px;background:var(--accent);color:var(--on-accent);text-decoration:none;font-weight:600;font-size:14px}
 .au-go:hover{filter:brightness(1.1)}
 .top .more-c{aspect-ratio:16/9}
+.leaflet-tooltip.wm-label{background:transparent;border:0;box-shadow:none;padding:0 2px;font-size:12px;font-weight:600;color:var(--fg);text-shadow:0 0 3px var(--bg),0 0 3px var(--bg),0 0 2px var(--bg)}
+.leaflet-tooltip.wm-label:before{display:none}
