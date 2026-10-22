@@ -1,7 +1,7 @@
 /* iamzet.travels — road logbook: year column + entries on the index, long-read column with sticky contents on trip pages */
 :root{
   --bg:#EDF0EC; --surface:#F7F8F5; --fg:#17242A; --muted:#5D6C6E; --line:#CDD4CF;
-  --accent:#1C4E80; --accent-soft:#DCE6EF; --on-accent:#FFFFFF; --map-land:#D5DBD6; --map-border:#BAC3BD;
+  --accent:#1C4E80; --accent-soft:#DCE6EF; --on-accent:#FFFFFF; --map-land:#D5DBD6; --map-border:#BAC3BD; --map-road:#C39A72;
   --winter:#5C8FC7; --spring:#5E9B5A; --summer:#D39A27; --autumn:#B85C38;
   --f-display:"Unbounded","Arial Black",system-ui,sans-serif;
   --f-ui:"Golos Text",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
@@ -11,7 +11,7 @@
 }
 @media (prefers-color-scheme:dark){:root{
   --bg:#10181C; --surface:#162126; --fg:#DCE4E2; --muted:#8C9B9C; --line:#2A383D;
-  --accent:#86B6E6; --accent-soft:#1B3044; --on-accent:#0E1A22; --map-land:#1F2B30; --map-border:#33434A;
+  --accent:#86B6E6; --accent-soft:#1B3044; --on-accent:#0E1A22; --map-land:#1F2B30; --map-border:#33434A; --map-road:#7A6650;
   --winter:#7FA9DA; --spring:#7DB878; --summer:#E2AE45; --autumn:#D27A57; color-scheme:dark}}
 
 *{box-sizing:border-box}

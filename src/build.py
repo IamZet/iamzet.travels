@@ -578,5 +578,6 @@ for _c in {o['c'] for o in _pts.values() if o['c']}:
 _cn_used = {o['c']: CNAME.get(o['c'], o['c']) for o in _pts.values() if o['c']}
 # as .js (not .json) so the map also works when index.html is opened straight from disk (file://)
 open(os.path.join(OUT, 'assets', 'map-world.js'), 'w', encoding='utf-8').write('window.__WW=' + open(os.path.join(S, 'world.json'), encoding='utf-8').read() + ';')
+open(os.path.join(OUT, 'assets', 'map-roads.js'), 'w', encoding='utf-8').write('window.__WR=' + open(os.path.join(S, 'roads.json'), encoding='utf-8').read() + ';')
 open(os.path.join(OUT, 'assets', 'map-data.js'), 'w', encoding='utf-8').write('window.__WM={cn:' + json.dumps(_cn_used, ensure_ascii=False) + ',c:' + json.dumps(list(_pts.values()), ensure_ascii=False, separators=(',', ':')) + ',k:' + open(os.path.join(S, 'countries.geojson'), encoding='utf-8').read() + '};')
 print('trips', len(T), 'pages', len(paged), 'words', total_words)

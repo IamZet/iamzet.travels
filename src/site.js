@@ -113,6 +113,13 @@
         need('__WW', 'map-world.js').then(function () {  // land/borders arrive later; points and countries show first
           L.geoJSON(window.__WW.land, { pane: 'land', interactive: false, attribution: 'Natural Earth', style: { stroke: false, fillColor: css('--map-land'), fillOpacity: 1 } }).addTo(map);
           L.geoJSON(window.__WW.borders, { pane: 'land', interactive: false, style: { color: css('--map-border'), weight: .7, opacity: 1, fill: false } }).addTo(map);
+          // Main roads (Natural Earth), thin, shown from zoom 4
+          map.createPane('roads'); map.getPane('roads').style.zIndex = 260; map.getPane('roads').style.pointerEvents = 'none';
+          need('__WR', 'map-roads.js').then(function () {
+            var roads = L.geoJSON(window.__WR, { pane: 'roads', interactive: false, style: { color: css('--map-road'), weight: 1, opacity: .9 } });
+            function rv() { if (map.getZoom() >= 4) { if (!map.hasLayer(roads)) roads.addTo(map); } else if (map.hasLayer(roads)) map.removeLayer(roads); }
+            map.on('zoomend', rv); rv();
+          }, function () {});
         }, function () {});
         var countries = L.geoJSON(d[0], {
           style: { color: acc, weight: 1, opacity: .55, fillColor: acc, fillOpacity: dark ? .28 : .2 }, interactive: false
