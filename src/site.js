@@ -111,11 +111,9 @@
         var acc = css('--accent'), surf = css('--surface');
         map.createPane('land'); map.getPane('land').style.zIndex = 250;
         need('__WW', 'map-world.js').then(function () {  // land/borders arrive later; points and countries show first
-          L.geoJSON(window.__WW.land, { pane: 'land', interactive: false, style: { stroke: false, fillColor: css('--map-land'), fillOpacity: 1 } }).addTo(map);
+          L.geoJSON(window.__WW.land, { pane: 'land', interactive: false, attribution: 'Natural Earth', style: { stroke: false, fillColor: css('--map-land'), fillOpacity: 1 } }).addTo(map);
           L.geoJSON(window.__WW.borders, { pane: 'land', interactive: false, style: { color: css('--map-border'), weight: .7, opacity: 1, fill: false } }).addTo(map);
         }, function () {});
-        map.createPane('labels'); map.getPane('labels').style.zIndex = 350; map.getPane('labels').style.pointerEvents = 'none';
-        L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_' + (dark ? 'Dark' : 'Light') + '_Gray_Reference/MapServer/tile/{z}/{y}/{x}', { maxZoom: 16, pane: 'labels', attribution: 'Natural Earth · Labels &copy; Esri' }).addTo(map);
         var countries = L.geoJSON(d[0], {
           style: { color: acc, weight: 1, opacity: .55, fillColor: acc, fillOpacity: dark ? .28 : .2 },
           onEachFeature: function (f, l) { l.bindTooltip(esc(f.properties.n), { sticky: true, className: 'wm-tip' }); }
