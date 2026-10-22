@@ -190,7 +190,7 @@ total_words = sum(N[k]['w'] for k in N)
 stats = [(len(T), plural(len(T), 'поездка', 'поездки', 'поездок')), (maxY - minY + 1, plural(maxY - minY + 1, 'год', 'года', 'лет') + ' в дороге'),
          (nv, 'видео'), (nt, plural(nt, 'дневник', 'дневника', 'дневников')), (np_, plural(np_, 'фотоальбом', 'фотоальбома', 'фотоальбомов'))]
 
-latest = [t for t in T if t['slug'] in COV or t['thumb']][:5]
+latest = [t for t in T if t['slug'] in COV or t['thumb']][:10]
 _more = next((t for t in T if t['y'] >= 2021 and T.index(t) > T.index(latest[-1])), None)
 latest_html = ''.join(f'''<a class="feat" href="trips/{t['slug']}.html">
   <span class="fimg"><img src="{('covers/' + t['slug'] + '.webp') if t['slug'] in COV else ('https://i.ytimg.com/vi/' + t['thumb'] + '/hqdefault.jpg')}" alt="" width="{COV[t['slug']][0] if t['slug'] in COV else 640}" height="{COV[t['slug']][1] if t['slug'] in COV else 360}"><span class="play">{ICO['play']}</span></span>
