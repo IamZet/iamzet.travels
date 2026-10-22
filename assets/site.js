@@ -169,7 +169,37 @@
                                         : { direction: 'top', offset: [0, -6], className: 'wm-tip' });
           });
         }
+        // Nudge permanent labels up/down (or to the left) so they don't overlap each other or other dots
+        var placeTimer = null;
+        function placeLabels() {
+          if (!labelsOn || labelsOn.indexOf('true') !== 0) return;
+          var size = map.getSize(), placed = [], dots = [];
+          var vis = pts.filter(function (m) { var p = map.latLngToContainerPoint(m.getLatLng()); m._wmP = p; return p.x > -150 && p.y > -40 && p.x < size.x + 150 && p.y < size.y + 40; });
+          vis.forEach(function (m) { var r = m.getRadius(); dots.push({ l: m._wmP.x - r, t: m._wmP.y - r, r: m._wmP.x + r, b: m._wmP.y + r }); });
+          vis.sort(function (a, b) { return a._wmP.y - b._wmP.y || a._wmP.x - b._wmP.x; });
+          function hit(bx, list) { for (var i = 0; i < list.length; i++) { var o = list[i]; if (bx.l < o.r && bx.r > o.l && bx.t < o.b && bx.b > o.t) return true; } return false; }
+          vis.forEach(function (m) {
+            var tt = m.getTooltip(), el = tt && tt.getElement(); if (!el) return;
+            el.style.marginTop = '0px'; el.style.marginLeft = '0px';
+            var w = el.offsetWidth, h = el.offsetHeight, r = m.getRadius(), p = m._wmP, gap = Math.round(r) + 2;
+            var cands = [[0, 1], [-h * .6, 1], [h * .6, 1], [-h * 1.1, 1], [h * 1.1, 1], [0, -1], [-h * .6, -1], [h * .6, -1], [-h * 1.1, -1], [h * 1.1, -1]];
+            var best = null;
+            for (var i = 0; i < cands.length; i++) {
+              var dy = cands[i][0], side = cands[i][1];
+              var l = side > 0 ? p.x + gap : p.x - gap - w, t = p.y - h / 2 + dy;
+              var bx = { l: l, t: t, r: l + w, b: t + h };
+              if (!hit(bx, placed) && !hit(bx, dots)) { best = [dy, side, bx]; break; }
+              if (!best) best = [dy, side, bx, true];
+            }
+            if (best[3]) { var l0 = p.x + gap, t0 = p.y - h / 2; best = [0, 1, { l: l0, t: t0, r: l0 + w, b: t0 + h }]; }
+            el.style.marginTop = Math.round(best[0]) + 'px';
+            el.style.marginLeft = best[1] > 0 ? '0px' : (-(w + 2 * gap)) + 'px';
+            placed.push(best[2]);
+          });
+        }
+        function schedulePlace() { clearTimeout(placeTimer); placeTimer = setTimeout(placeLabels, 60); }
         map.on('zoomend', setLabels);
+        map.on('zoomend moveend', schedulePlace);
         map.fitBounds([[-8, -166], [78, 190]], { padding: [0, 0] });
         setLabels();
       }).catch(function (er) { if (window.console) console.error(er); box.innerHTML = '<span class="maploading">Не удалось загрузить карту</span>'; });
