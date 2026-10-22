@@ -47,7 +47,7 @@ a.hbar:hover span{filter:brightness(1.15)}
 .latest{padding-block:24px 18px}
 .top{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:18px;align-items:stretch}
 .carousel{position:relative;min-width:0}
-.top .fimg{aspect-ratio:16/9}
+.top .fimg{aspect-ratio:4/3}
 .top .fname{font-size:17px}
 .top .fwhen{margin-top:4px}
 .feats{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 18px) / 2);gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain;padding-bottom:2px}
@@ -296,7 +296,7 @@ body.lb-open{overflow:hidden}
 .yt img.th-dz,.yt img.th-yt{width:100%;height:100%;object-fit:cover}
 
 .worldmap{margin:0 0 22px}
-.worldmap .mapbox{border:0;border-radius:8px;max-height:none;aspect-ratio:auto;height:clamp(300px,calc(100vh - 340px),900px)}
+.worldmap .mapbox{border:0;border-radius:8px;max-height:none;aspect-ratio:auto;height:clamp(280px,calc(100vh - 365px),900px)}
 @media (max-width:600px){.worldmap .mapbox{height:420px}}
 
 #worldmap{display:block;background:var(--bg);font-family:var(--f-ui)}
@@ -357,7 +357,7 @@ body.lb-open{overflow:hidden}
 .sections{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin:8px 0 28px}
 .sections .archlink{margin:0}
 .carousel{container-type:inline-size}
-.carousel .cnav{position:absolute;left:0;right:0;top:calc((100cqw - 18px) / 2 * 9 / 32);height:0;z-index:2;pointer-events:none}
+.carousel .cnav{position:absolute;left:0;right:0;top:calc((100cqw - 18px) / 2 * 3 / 8);height:0;z-index:2;pointer-events:none}
 .carousel .cnav button{position:absolute;top:0;transform:translateY(-50%);pointer-events:auto;box-shadow:0 2px 8px rgba(0,0,0,.12)}
 .carousel .cnav .cprev{left:-14px}
 .carousel .cnav .cnext{right:-14px}
@@ -368,7 +368,7 @@ body.home:not(.arch) .sections{margin:0 0 18px}
 body.home:not(.arch) .worldmap{margin:0 0 18px}
 .au-go{display:inline-block;margin-top:10px;padding:7px 16px;border-radius:999px;background:var(--accent);color:var(--on-accent);text-decoration:none;font-weight:600;font-size:14px}
 .au-go:hover{filter:brightness(1.1)}
-.top .more-c{aspect-ratio:16/9}
+.top .more-c{aspect-ratio:4/3}
 .leaflet-tooltip.wm-label{background:transparent;border:0;box-shadow:none;padding:0 2px;font-size:var(--wm-lbl,12px);font-weight:600;color:var(--fg);text-shadow:0 0 3px var(--bg),0 0 3px var(--bg),0 0 2px var(--bg)}
 .leaflet-tooltip.wm-label:before{display:none}
 .leaflet-tooltip.wm-label{cursor:pointer}
