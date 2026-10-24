@@ -554,7 +554,7 @@
       <Placemark>
         <name>Великий Новгород</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Last visit"><value>2018</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2018-vokrug-adriaticheskogo-morya.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2018</value></Data></ExtendedData>
         <Point><coordinates>31.2741929,58.5255698,0</coordinates></Point>
       </Placemark>
       <Placemark>
@@ -656,7 +656,7 @@
       <Placemark>
         <name>Свияжск</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Last visit"><value>2021</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2021-ekaterinburg.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2024</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2024-volsk.html</value></Data></ExtendedData>
         <Point><coordinates>48.6583572,55.7710745,0</coordinates></Point>
       </Placemark>
       <Placemark>

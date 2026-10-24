@@ -230,7 +230,7 @@ FOOT = f'<footer class="foot">© {maxY} Александр Захаров · {SO
 
 TRAVELS_LINK = f'<a class="archlink" href="travels"><span class="al-k">Путешествия</span><span class="al-t">{ARCH_Y}–{maxY}</span><span class="al-n">→</span></a>'
 ARCH_LINK = f'<a class="archlink" href="archive"><span class="al-k">Архив</span><span class="al-t">{min(archY)}–{max(archY)}</span><span class="al-n">→</span></a>'
-index = head('Все путешествия — iamzet.travels', f'Путевой журнал Александра Захарова: {len(T)} поездок с {minY} года — путевые заметки, видеоотчёты, карты маршрутов и фотоальбомы.', '') + f'''<body class="home">
+index = head('На машине по России и не только — iamzet.travels', f'Путевой журнал Александра Захарова: {len(T)} поездок с {minY} года — путевые заметки, видеоотчёты, карты маршрутов и фотоальбомы.', '') + f'''<body class="home">
 <div class="wrap">
 <h1 class="vh">iamzet.travels — на машине по России и не только</h1>
 <section class="latest" aria-label="Последние поездки"><div class="top">{AUTHOR}<div class="carousel"><div class="cnav"><button type="button" class="cprev" aria-label="Назад"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 4l-6 6 6 6"/></svg></button><button type="button" class="cnext" aria-label="Вперёд"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 4l6 6-6 6"/></svg></button></div><div class="feats" tabindex="0">{latest_html}<div class="more"><span class="more-c"><a class="more-t au-go" href="{"travels#t-" + _more["slug"] if _more else "travels"}">Ещё →</a></span></div></div></div></div></section>
