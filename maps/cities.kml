@@ -908,7 +908,7 @@
       <Placemark>
         <name>Тюмень</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Last visit"><value>2021</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2021-vladivostok.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2025</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2025-na-dalniy-vostok.html</value></Data></ExtendedData>
         <Point><coordinates>65.5632369,57.1553394,0</coordinates></Point>
       </Placemark>
       <Placemark>
@@ -956,7 +956,7 @@
       <Placemark>
         <name>Сарапул</name>
         <styleUrl>#city</styleUrl>
-        <ExtendedData><Data name="Last visit"><value>2021</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2021-ekaterinburg.html</value></Data></ExtendedData>
+        <ExtendedData><Data name="Last visit"><value>2021</value></Data><Data name="Trip link"><value>https://iamzet.ru/trips/2021-vladivostok.html</value></Data></ExtendedData>
         <Point><coordinates>53.8171237,56.4770315,0</coordinates></Point>
       </Placemark>
       <Placemark>
